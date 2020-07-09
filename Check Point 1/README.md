@@ -38,7 +38,6 @@
     R的實作如以下兩個連結。<br/>
     https://opendatascience.com/building-your-first-bayesian-model-in-r/  (單純用MCMC估計貝式posterior的R實作)<br/>
     https://medium.com/@ODSC/hierarchical-bayesian-models-in-r-9a18e6acdf2b  (加入層級貝氏用MCMC估計每一組posterior的R實作)
-<br/>
 
 3. Gaussian copula：<br/>
     Copula是用來描繪兩個不同變數關係的function。假定H(x,y)為一bivariate distribution，F(x)、G(y)為x、y的pdf，則存在一個唯一的copula函數C，使得H(x,y)=C(F(x),G(y))，因而可知C(u,v)=H(inverse F(u), inverse G(u))。而Gaussian copula即為假設F和G皆為Normal的情況。<br/>
