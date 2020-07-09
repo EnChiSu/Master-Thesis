@@ -13,7 +13,7 @@
   <img src="https://drive.google.com/uc?export=view&id=1GnoFbgsrK6OjXhuArTyAeqkxyKMsIM6P" width="600" height="600">
 </p>
 
-
+<br/>
 ### 二、這兩周的進度
 在這兩周我完整讀了2017年統研所李京諭學長所撰寫的「以多變量Gamma Distribution探討多品項購買期間的相關性」(如附檔)，並且了解當中使用的三個方法(MCMC、Hierarchical Baysian Model、Copula)和Python及R的實作方式。論文當中還有一些概念間的串接自己還沒完全領悟，以下會概括描述自己對整篇論文的理解，以及在三個所使用方法所做的認識。
 
@@ -38,8 +38,6 @@
     R的實作如以下兩個連結。<br/>
     https://opendatascience.com/building-your-first-bayesian-model-in-r/  (單純用MCMC估計貝式posterior的R實作)<br/>
     https://medium.com/@ODSC/hierarchical-bayesian-models-in-r-9a18e6acdf2b  (加入層級貝氏用MCMC估計每一組posterior的R實作)
-
-<br/>
 <br/>
 
 3. Gaussian copula：<br/>
@@ -47,7 +45,7 @@
     在學長的論文當中，學長透過如同我們在鄭主任的R語言視覺化課程中模擬的方式，根據特定的copula，隨機去產生Bivariate standard normal distribution並轉換到cdf，根據這個cdf再轉換到bivariate gamma distribution。但關於產生完multivariate gamma distribution的模擬後，與後面Hierarchical Baysian Multivariate Gamma Model之間的連結我自己目前還未領悟出來。
 
 
-
+<br/>
 ### 三、問題討論
 1. 論文的方向及可行性
 
