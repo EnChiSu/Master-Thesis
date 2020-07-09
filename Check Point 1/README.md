@@ -42,12 +42,11 @@
 
 3. Gaussian copula：<br/>
     Copula是用來描繪兩個不同變數關係的function。假定H(x,y)為一bivariate distribution，F(x)、G(y)為x、y的pdf，則存在一個唯一的copula函數C，使得H(x,y)=C(F(x),G(y))，因而可知C(u,v)=H(inverse F(u), inverse G(u))。而Gaussian copula即為假設F和G皆為Normal的情況。<br/>
-    在學長的論文當中，學長透過如同我們在鄭主任的R語言視覺化課程中模擬的方式，根據特定的copula，隨機去產生Bivariate standard normal distribution並轉換到cdf，根據這個cdf再轉換到bivariate gamma distribution。但關於產生完multivariate gamma distribution的模擬後，與後面Hierarchical Baysian Multivariate Gamma Model之間的連結我自己目前還未領悟出來。
+    在學長的論文當中，學長透過如同我們在鄭主任的R語言視覺化課程中模擬的方式，根據特定的copula，隨機去產生Bivariate standard normal distribution並轉換到cdf，根據這個cdf再轉換到bivariate gamma distribution。但關於產生完multivariate gamma distribution的模擬後，與後面Hierarchical Baysian Multivariate Gamma Model之間的連結我自己目前還未領悟出來。<br/>
 
-
-<br/>
 ### 三、問題討論
-1. 論文的方向及可行性
+
+1. 論文的方向及可行性<br/>
 
 2. 論文當中讀不懂的地方<br/>
    1. 產生multivariate gamma distribution的模擬後，與Hierarchical Baysian Multivariate Gamma Model之間的關聯為何?<br/>
