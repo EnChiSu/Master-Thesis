@@ -36,15 +36,16 @@
     因而若想要使用MCMC估計層級貝氏所產生的posterior，在進行MCMC的迴圈時，必須將不同組的效果另立一個變數做代表，針對不同組跑回圈，使可以利用MCMC估計不同組的posterior。
     <p align="center">
       <img src="https://drive.google.com/uc?export=view&id=1ell7YNilD1RbGBkODnDu1WRuotv4Mvkh"></p>
-    R的實作如以下兩個連結。<br/>
+     R的實作如以下兩個連結。<br/>
     https://opendatascience.com/building-your-first-bayesian-model-in-r/  (單純用MCMC估計貝式posterior的R實作)<br/>
     https://medium.com/@ODSC/hierarchical-bayesian-models-in-r-9a18e6acdf2b  (加入層級貝氏用MCMC估計每一組posterior的R實作)
 
 <br/>
 <br/>
+
 3. Gaussian copula：<br/>
-   Copula是用來描繪兩個不同變數關係的function。假定H(x,y)為一bivariate distribution，F(x)、G(y)為x、y的pdf，則存在一個唯一的copula函數C，使得H(x,y)=C(F(x),G(y))，因而可知C(u,v)=H(inverse F(u), inverse G(u))。而Gaussian copula即為假設F和G皆為Normal的情況。<br/>
-   在學長的論文當中，學長透過如同我們在鄭主任的R語言視覺化課程中模擬的方式，根據特定的copula，隨機去產生Bivariate standard normal distribution並轉換到cdf，根據這個cdf再轉換到bivariate gamma distribution。但關於產生完multivariate gamma distribution的模擬後，與後面Hierarchical Baysian Multivariate Gamma Model之間的連結我自己目前還未領悟出來。
+    Copula是用來描繪兩個不同變數關係的function。假定H(x,y)為一bivariate distribution，F(x)、G(y)為x、y的pdf，則存在一個唯一的copula函數C，使得H(x,y)=C(F(x),G(y))，因而可知C(u,v)=H(inverse F(u), inverse G(u))。而Gaussian copula即為假設F和G皆為Normal的情況。<br/>
+    在學長的論文當中，學長透過如同我們在鄭主任的R語言視覺化課程中模擬的方式，根據特定的copula，隨機去產生Bivariate standard normal distribution並轉換到cdf，根據這個cdf再轉換到bivariate gamma distribution。但關於產生完multivariate gamma distribution的模擬後，與後面Hierarchical Baysian Multivariate Gamma Model之間的連結我自己目前還未領悟出來。
 
 
 
