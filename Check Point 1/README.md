@@ -32,13 +32,13 @@
       <img src="https://drive.google.com/uc?export=view&id=1Xb_TPxHxU_mydFQrs2H59c9HRcPNmOgL"></p>
 <br/>
     <p align="center">
-      <img src="https://drive.google.com/uc?export=view&id=1AkM1EGuDFwVIdGHKjOYOIuuZ8LCpdVzl"></p><br/>
+      <img src="https://drive.google.com/uc?export=view&id=1AkM1EGuDFwVIdGHKjOYOIuuZ8LCpdVzl"></p>
     因而若想要使用MCMC估計層級貝氏所產生的posterior，在進行MCMC的迴圈時，必須將不同組的效果另立一個變數做代表，針對不同組跑回圈，使可以利用MCMC估計不同組的posterior。
     <p align="center">
-      <img src="https://drive.google.com/uc?export=view&id=1ell7YNilD1RbGBkODnDu1WRuotv4Mvkh"></p><br/>
-    R的實作如以下兩個連結。<br/>
-    https://opendatascience.com/building-your-first-bayesian-model-in-r/  (單純用MCMC估計貝式posterior的R實作)<br/>
-    https://medium.com/@ODSC/hierarchical-bayesian-models-in-r-9a18e6acdf2b  (加入層級貝氏用MCMC估計每一組posterior的R實作)
+      <img src="https://drive.google.com/uc?export=view&id=1ell7YNilD1RbGBkODnDu1WRuotv4Mvkh"></p>
+      R的實作如以下兩個連結。<br/>
+      https://opendatascience.com/building-your-first-bayesian-model-in-r/  (單純用MCMC估計貝式posterior的R實作)<br/>
+      https://medium.com/@ODSC/hierarchical-bayesian-models-in-r-9a18e6acdf2b  (加入層級貝氏用MCMC估計每一組posterior的R實作)
 
 <br/>
 <br/>
