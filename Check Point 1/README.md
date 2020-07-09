@@ -31,7 +31,7 @@
     <p align="center">
       <img src="https://drive.google.com/uc?export=view&id=1Xb_TPxHxU_mydFQrs2H59c9HRcPNmOgL" width="700" height="400"></p>
     <p align="center">
-      <img src="https://drive.google.com/uc?export=view&id=1AkM1EGuDFwVIdGHKjOYOIuuZ8LCpdVzl" width="900" height="400"></p>
+      <img src="https://drive.google.com/uc?export=view&id=1AkM1EGuDFwVIdGHKjOYOIuuZ8LCpdVzl" width="1000" height="400"></p>
     因而若想要使用MCMC估計層級貝氏所產生的posterior，在進行MCMC的迴圈時，必須將不同組的效果另立一個變數做代表，針對不同組跑回圈，使可以利用MCMC估計不同組的posterior。
     <p align="center">
       <img src="https://drive.google.com/uc?export=view&id=1ell7YNilD1RbGBkODnDu1WRuotv4Mvkh" width="800" height="400"></p>
