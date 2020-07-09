@@ -12,8 +12,8 @@
 <p align="center">
   <img src="https://drive.google.com/uc?export=view&id=1GnoFbgsrK6OjXhuArTyAeqkxyKMsIM6P" width="600" height="600">
 </p>
-
 <br/>
+
 ### 二、這兩周的進度
 在這兩周我完整讀了2017年統研所李京諭學長所撰寫的「以多變量Gamma Distribution探討多品項購買期間的相關性」(如附檔)，並且了解當中使用的三個方法(MCMC、Hierarchical Baysian Model、Copula)和Python及R的實作方式。論文當中還有一些概念間的串接自己還沒完全領悟，以下會概括描述自己對整篇論文的理解，以及在三個所使用方法所做的認識。
 
