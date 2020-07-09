@@ -51,8 +51,8 @@
 ### 三、問題討論
 1. 論文的方向及可行性
 
-2. 論文當中讀不懂的地方
-(1) 產生multivariate gamma distribution的模擬後，與Hierarchical Baysian Multivariate Gamma Model之間的關聯為何?
-(2) Metropolis-within-Gibbs當中，使用Gibbs sampler估計conditional posterior distribution，而用Metropolis-Hasting估計posterior distribution，是因為我們已知 conditional posterior distribution的分布樣態，而不知 posterior distribution的樣態嗎? 這個conditional  posterior distribution以及posterior distribution在這次購買間格的研究中又代表的是甚麼? Metropolis-within-Gibbs這種混和的方法單純就是將 Gibbs sampler以及Metropolis-Hasting混合使用嗎? 有沒有需要調校模型參數或權重? 
-(3) 在透過MCMC建構好層級貝氏模型的posterior後，如何進行預測的實現? 每個data丟入模型，應該會產生一個相對應的posterior參數，我們是使用這個估計出來的posterior mean作為我們的預測值嗎?
-(4) 如果網格不是方形的話(橫軸的變數數與縱軸的變數數不同)，還可以使用multivariate gamma進行推估嗎?
+2. 論文當中讀不懂的地方<br/>
+- (1) 產生multivariate gamma distribution的模擬後，與Hierarchical Baysian Multivariate Gamma Model之間的關聯為何?<br/>
+- (2) Metropolis-within-Gibbs當中，使用Gibbs sampler估計conditional posterior distribution，而用Metropolis-Hasting估計posterior distribution，是因為我們已知 conditional posterior distribution的分布樣態，而不知 posterior distribution的樣態嗎? 這個conditional  posterior distribution以及posterior distribution在這次購買間格的研究中又代表的是甚麼? Metropolis-within-Gibbs這種混和的方法單純就是將 Gibbs sampler以及Metropolis-Hasting混合使用嗎? 有沒有需要調校模型參數或權重? <br/>
+- (3) 在透過MCMC建構好層級貝氏模型的posterior後，如何進行預測的實現? 每個data丟入模型，應該會產生一個相對應的posterior參數，我們是使用這個估計出來的posterior mean作為我們的預測值嗎?<br/>
+- (4) 如果網格不是方形的話(橫軸的變數數與縱軸的變數數不同)，還可以使用multivariate gamma進行推估嗎?
