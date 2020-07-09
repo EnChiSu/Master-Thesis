@@ -19,13 +19,13 @@
 
 這篇論文中，學長透過MCMC去估計Hierarchical Baysian Model(層級貝氏)中不同組的posterior distribution，而由於為多維度必須考慮不同維度之間的相關性，因而在進行MCMC隨機取樣時使用了Gaussian copula描繪變數間的關係函式去產生Multivariate standard normal distribution(進而再轉為multivariate gamma distribution)，建構 Hierarchical Baysian Multivariate Gamma Model ，進而估計兩兩不同品項間的購買時間間隔，並進行預測和比較。
 
-1. MCMC：
+1. MCMC：<br/>
 使用的緣由是我們沒有使用conjugate prior的情況下，並不知道posterior的分布長甚麼樣子，透過對這個posterior進行多次的抽樣了解這個分布在不同位置的density。這樣的概念下開發出幾個不同的演算法，包含Metropolis Hasting Algorithm、Gibbs Sampling，主要的概念都是透過guess(隨機提一個proposal，也就是隨機抽樣)，然後check(看這個樣本的機率有沒有大過你設定的門檻，如果有則跳到這個新的proposal的位置並提下一個proposal繼續探索，如果沒有則在原位置提新的proposal，如此可以慢慢建立出posterior分布的輪廓。然而，這樣方法的問題在於它並沒有限制proposal的方向，所以可能會提了很多最後被 reject掉的proposal造成演算法很沒有效率。(https://www.youtube.com/watch?v=OTO1DygELpY)
     <p align="center">
       <img src="https://drive.google.com/uc?export=view&id=1_ISh5EZ-izq67fm5MKijcjclskPPSjOR"></p>
     新進的方法是Hamiltonian Monte Carlo(HMC)，即為目前很多建構機器學習方法的gradient decent(梯度下降)，將先前沒有特定方向的proposal改用梯度下降的方式(想像在一個碗裡面彈出一個鐵球)去引導proposal，因而每次提出的proposal都會往density大的方向前進(也就是碗底的方向)，不再有reject的情況，而變得非常有效率。而梯度下降演算法中鐵球的重量、重力的大小、跳的次數這些參數都可以調整，會進一步影響對posterior distribution建構的效率，因而需要進行調整。 (https://www.youtube.com/watch?v=v-j0UmWf3Us&feature=youtu.be)
 
-2. Hierarchical Baysian Model：
+2. Hierarchical Baysian Model：<br/>
 層級貝氏模型混和單一模型(common mean model)與個別模型(individual model)，使可以將模型無法解釋的部分拆解為組間的差異以及組內的差異。
 層級貝氏的作法就像是傳統回歸(也就是單一模型)的進一步延伸，傳統回歸背後假設資料服從一個特定平均數、變異數的常態分配。層級貝氏則往上加一層，資料所服從的分配的參數會服從另一個分配(也就是hyperparameter所代表的)。(https://www.youtube.com/watch?v=VssgU4Ey7ss)
     <p align="center">
@@ -44,9 +44,9 @@
 
 <br/>
 <br/>
-3. Gaussian copula：
-Copula是用來描繪兩個不同變數關係的function。假定H(x,y)為一bivariate distribution，F(x)、G(y)為x、y的pdf，則存在一個唯一的copula函數C，使得H(x,y)=C(F(x),G(y))，因而可知C(u,v)=H(inverse F(u), inverse G(u))。而Gaussian copula即為假設F和G皆為Normal的情況。
-在學長的論文當中，學長透過如同我們在鄭主任的R語言視覺化課程中模擬的方式，根據特定的copula，隨機去產生Bivariate standard normal distribution並轉換到cdf，根據這個cdf再轉換到bivariate gamma distribution。但關於產生完multivariate gamma distribution的模擬後，與後面Hierarchical Baysian Multivariate Gamma Model之間的連結我自己目前還未領悟出來。
+3. Gaussian copula：<br/>
+    Copula是用來描繪兩個不同變數關係的function。假定H(x,y)為一bivariate distribution，F(x)、G(y)為x、y的pdf，則存在一個唯一的copula函數C，使得H(x,y)=C(F(x),G(y))，因而可知C(u,v)=H(inverse F(u), inverse G(u))。而Gaussian copula即為假設F和G皆為Normal的情況。
+    在學長的論文當中，學長透過如同我們在鄭主任的R語言視覺化課程中模擬的方式，根據特定的copula，隨機去產生Bivariate standard normal distribution並轉換到cdf，根據這個cdf再轉換到bivariate gamma distribution。但關於產生完multivariate gamma distribution的模擬後，與後面Hierarchical Baysian Multivariate Gamma Model之間的連結我自己目前還未領悟出來。
 
 
 
