@@ -10,7 +10,7 @@
 類似下面介紹2017年李京諭學長論文的方法，透過MCMC去估計Hierarchical Baysian Model(層級貝氏)中不同組服從mutivariate gamma的posterior distribution，來了解不同組別當中不同網格點上的值。
 
 <p align="center">
-  <img src="https://drive.google.com/uc?export=view&id=1GnoFbgsrK6OjXhuArTyAeqkxyKMsIM6P" width="600" height="600">
+  <img src="https://drive.google.com/uc?export=view&id=1GnoFbgsrK6OjXhuArTyAeqkxyKMsIM6P">
 </p>
 <br/>
 
@@ -25,7 +25,7 @@
       <img src="https://drive.google.com/uc?export=view&id=1_ISh5EZ-izq67fm5MKijcjclskPPSjOR"></p>
     新進的方法是Hamiltonian Monte Carlo(HMC)，即為目前很多建構機器學習方法的gradient decent(梯度下降)，將先前沒有特定方向的proposal改用梯度下降的方式(想像在一個碗裡面彈出一個鐵球)去引導proposal，因而每次提出的proposal都會往density大的方向前進(也就是碗底的方向)，不再有reject的情況，而變得非常有效率。而梯度下降演算法中鐵球的重量、重力的大小、跳的次數這些參數都可以調整，會進一步影響對posterior distribution建構的效率，因而需要進行調整。 (https://www.youtube.com/watch?v=v-j0UmWf3Us)
 
-2. Hierarchical Baysian Model：<br/>
+2. Hierarchical Bayesian Model：<br/>
 層級貝氏模型混和單一模型(common mean model)與個別模型(individual model)，使可以將模型無法解釋的部分拆解為組間的差異以及組內的差異。
 層級貝氏的作法就像是傳統回歸(也就是單一模型)的進一步延伸，傳統回歸背後假設資料服從一個特定平均數、變異數的常態分配。層級貝氏則往上加一層，資料所服從的分配的參數會服從另一個分配(也就是hyperparameter所代表的)。(https://www.youtube.com/watch?v=VssgU4Ey7ss)
     <p align="center">
@@ -41,14 +41,22 @@
 
 3. Gaussian copula：<br/>
     Copula是用來描繪兩個不同變數關係的function。假定H(x,y)為一bivariate distribution，F(x)、G(y)為x、y的pdf，則存在一個唯一的copula函數C，使得H(x,y)=C(F(x),G(y))，因而可知C(u,v)=H(inverse F(u), inverse G(u))。而Gaussian copula即為假設F和G皆為Normal的情況。<br/>
-    在學長的論文當中，學長透過如同我們在鄭主任的R語言視覺化課程中模擬的方式，根據特定的copula，隨機去產生Bivariate standard normal distribution並轉換到cdf，根據這個cdf再轉換到bivariate gamma distribution。但關於產生完multivariate gamma distribution的模擬後，與後面Hierarchical Baysian Multivariate Gamma Model之間的連結我自己目前還未領悟出來。<br/>
+    在學長的論文當中，學長透過如同我們在鄭主任的R語言視覺化課程中模擬的方式，這定特定的correlation下隨機去產生Bivariate standard normal distribution並轉換成cdf (uniform distribution)，根據這個cdf再轉換到bivariate gamma distribution，使得這個bivariate joint distribution能夠捕捉到前面設定的這個correlation。(https://twiecki.io/blog/2018/05/03/copulas/)
+    <p align="center">
+      <img src="https://drive.google.com/uc?export=view&id=1BOwBrZEQvq-ghGQkEM9iCwLj9GL24thX"></p>
+    <p align="center">
+      <img src="https://drive.google.com/uc?export=view&id=1ZLCi7-I57sXIKIJ6GEiolppU_kVHCxk9"></p>
+    <p align="center">
+      <img src="https://drive.google.com/uc?export=view&id=13tb2QaofqG8jstdhAsDSAjK_eZAN1iEH"></p>
+    透過這個Gaussian copula我們就能夠描繪Hierarchical Bayesian Multivariate Gamma Model中的correlation。(Gaussian copula則透過Gibbs Sampler估計出)
+    <br/>
 
 ### 三、問題討論
 
 1. 論文的方向及可行性<br/>
 
 2. 論文當中讀不懂的地方<br/>
-   1. 產生multivariate gamma distribution的模擬後，與Hierarchical Baysian Multivariate Gamma Model之間的關聯為何?<br/>
+   1. 產生multivariate gamma distribution的模擬後，與Hierarchical Bayesian Multivariate Gamma Model之間的關聯為何?<br/>
    2. Metropolis-within-Gibbs當中，使用Gibbs sampler估計conditional posterior distribution，而用Metropolis-Hasting估計posterior distribution，是因為我們已知 conditional posterior distribution的分布樣態，而不知 posterior distribution的樣態嗎? 這個conditional  posterior distribution以及posterior distribution在這次購買間格的研究中又代表的是甚麼? Metropolis-within-Gibbs這種混和的方法單純就是將 Gibbs sampler以及Metropolis-Hasting混合使用嗎? 有沒有需要調校模型參數或權重? <br/>
    3. 在透過MCMC建構好層級貝氏模型的posterior後，如何進行預測的實現? 每個data丟入模型，應該會產生一個相對應的posterior參數，我們是使用這個估計出來的posterior mean作為我們的預測值嗎?<br/>
    4. 如果網格不是方形的話(橫軸的變數數與縱軸的變數數不同)，還可以使用multivariate gamma進行推估嗎?
