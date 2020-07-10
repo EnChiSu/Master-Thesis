@@ -15,9 +15,9 @@
 <br/>
 
 ### 二、這兩周的進度
-在這兩周我完整讀了2017年統研所李京諭學長所撰寫的「以多變量Gamma Distribution探討多品項購買期間的相關性」(如附檔)，並且了解當中使用的三個方法(MCMC、Hierarchical Baysian Model、Copula)和Python及R的實作方式。論文當中還有一些概念間的串接自己還沒完全領悟，以下會概括描述自己對整篇論文的理解，以及在三個所使用方法所做的認識。
+在這兩周我完整讀了2017年統研所李京諭學長所撰寫的「以多變量Gamma Distribution探討多品項購買期間的相關性」(https://www.airitilibrary.com/Publication/alDetailedMesh1?DocID=U0001-2306201712014100)，並且了解當中使用的三個方法(MCMC、Hierarchical Bayesian Model、Copula)和Python及R的實作方式。論文當中還有一些概念間的串接自己還沒完全領悟，以下會概括描述自己對整篇論文的理解，以及在三個所使用方法所做的認識。
 
-這篇論文中，學長透過MCMC去估計Hierarchical Baysian Model(層級貝氏)中不同組的posterior distribution，而由於為多維度必須考慮不同維度之間的相關性，因而在進行MCMC隨機取樣時使用了Gaussian copula描繪變數間的關係函式去產生Multivariate standard normal distribution(進而再轉為multivariate gamma distribution)，建構 Hierarchical Baysian Multivariate Gamma Model ，進而估計兩兩不同品項間的購買時間間隔，並進行預測和比較。
+這篇論文中，學長混和MCMC的Gibbs Sampler以及Metropolis Hasting去建構Hierarchical Bayesian Multivariate Gamma Model，進而去預測兩兩不同商品的購買時間間格，並與MLE法估計copula建構出的層級貝式模型去做比較。針對Hierarchical Baysian Multivariate Gamma Model中的Shape以及Scale parameter，由於並不清楚posterior distribution的樣態而使用Metropolis Hasting估計。而由於為多維度必須考慮不同維度之間的相關性，因此此篇論文使用Gaussian copula作為變數間相關性的基礎，透過產生Multivariate standard normal distribution再轉為multivariate gamma distribution的方式，描繪出模型當中的correlation參數。
 
 1. MCMC：<br/>
 使用的緣由是我們沒有使用conjugate prior的情況下，並不知道posterior的分布長甚麼樣子，透過對這個posterior進行多次的抽樣了解這個分布在不同位置的density。這樣的概念下開發出幾個不同的演算法，包含Metropolis Hasting Algorithm、Gibbs Sampling，主要的概念都是透過guess(隨機提一個proposal，也就是隨機抽樣)，然後check(看這個樣本的機率有沒有大過你設定的門檻，如果有則跳到這個新的proposal的位置並提下一個proposal繼續探索，如果沒有則在原位置提新的proposal，如此可以慢慢建立出posterior分布的輪廓。然而，這樣方法的問題在於它並沒有限制proposal的方向，所以可能會提了很多最後被 reject掉的proposal造成演算法很沒有效率。(https://www.youtube.com/watch?v=OTO1DygELpY)
@@ -48,7 +48,7 @@
       <img src="https://drive.google.com/uc?export=view&id=1ZLCi7-I57sXIKIJ6GEiolppU_kVHCxk9"></p>
     <p align="center">
       <img src="https://drive.google.com/uc?export=view&id=13tb2QaofqG8jstdhAsDSAjK_eZAN1iEH"></p>
-    透過這個Gaussian copula我們就能夠描繪Hierarchical Bayesian Multivariate Gamma Model中的correlation。(Gaussian copula則透過Gibbs Sampler估計出)
+    透過這個Gaussian copula我們就能夠描繪Hierarchical Bayesian Multivariate Gamma Model中的correlation。(Gaussian copula的correlation matrix透過Gibbs Sampler估計，因為我們已知posterior distribution屬於何種分布)
     <br/>
 
 ### 三、問題討論
