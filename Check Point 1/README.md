@@ -15,7 +15,7 @@
 <br/>
 
 ### 二、這兩周的進度
-在這兩周我完整讀了2017年統研所李京諭學長所撰寫的「以多變量Gamma Distribution探討多品項購買期間的相關性」(https://www.airitilibrary.com/Publication/alDetailedMesh1?DocID=U0001-2306201712014100)，並且了解當中使用的三個方法(MCMC、Hierarchical Bayesian Model、Copula)和Python及R的實作方式。論文當中還有一些概念間的串接自己還沒完全領悟，以下會概括描述自己對整篇論文的理解，以及在三個所使用方法所做的認識。
+在這兩周我完整讀了2017年統研所李京諭學長所撰寫的「以多變量Gamma Distribution探討多品項購買期間的相關性」(https://www.airitilibrary.com/Publication/alDetailedMesh1?DocID=U0001-2306201712014100 )，並且了解當中使用的三個方法(MCMC、Hierarchical Bayesian Model、Copula)和Python及R的實作方式。論文當中還有一些概念間的串接自己還沒完全領悟，以下會概括描述自己對整篇論文的理解，以及在三個所使用方法所做的認識。
 
 這篇論文中，學長混和MCMC的Gibbs Sampler以及Metropolis Hasting去建構Hierarchical Bayesian Multivariate Gamma Model，進而去預測兩兩不同商品的購買時間間格，並與MLE法估計copula建構出的層級貝式模型去做比較。針對Hierarchical Baysian Multivariate Gamma Model中的Shape以及Scale parameter，由於並不清楚posterior distribution的樣態而使用Metropolis Hasting估計。而由於為多維度必須考慮不同維度之間的相關性，因此此篇論文使用Gaussian copula作為變數間相關性的基礎，透過產生Multivariate standard normal distribution再轉為multivariate gamma distribution的方式，描繪出模型當中的correlation參數。
     <p align="center">
