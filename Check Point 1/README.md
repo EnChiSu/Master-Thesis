@@ -10,7 +10,7 @@
 類似下面介紹2017年李京諭學長論文的方法，透過MCMC去估計Hierarchical Baysian Model(層級貝氏)中不同組服從mutivariate gamma的posterior distribution，來了解不同組別當中不同網格點上的值。
 
 <p align="center">
-  <img src="https://drive.google.com/uc?export=view&id=1GnoFbgsrK6OjXhuArTyAeqkxyKMsIM6P">
+  <img src="https://drive.google.com/uc?export=view&id=1GnoFbgsrK6OjXhuArTyAeqkxyKMsIM6P" width="600" height="600">
 </p>
 <br/>
 
