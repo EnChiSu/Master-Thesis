@@ -1,8 +1,9 @@
 ### 三、問題討論
 
 1. 關於「模型的架構」─<br/>
-   1. 透過Metropolis-Hasting Algorithm以及Gibbs Sampling的方式估計出Multivariate Gamma的parameter，那我們不就有我們想要的參數估計值能夠進行預測了嗎? 為什麼還需要用Gaussian Copula代入估計出的correlation matrix求一個Multivariate Gamma? 
-   2. Multivariate Gamma跟Hierarchical Bayesian Model的連結為何?
+   1. 透過Metropolis-Hasting Algorithm以及Gibbs Sampling的方式估計出Multivariate Gamma的parameter(scale、shape parameter以及correlation matrix)，那我們不就有我們想要的參數估計值能夠進行預測了嗎? 為什麼還需要用Gaussian Copula的方式，將估計出的correlation matrix代入Multivariate standard normal轉出一個Multivariate Gamma? 
+   2. 承上，這個透過Gaussaian Copula轉出的Multivariate Gamma在我們的目標Hierarchical Bayesian Multivariate Gamma Model中扮演的腳色為何? 跟用直接用Metropolis-Hasting Algorithm以及Gibbs Sampling估計出參數的Multivariate Gamma的差異為何?
+   
 
 2. 關於「估計」─<br/>
    1. 在論述層級貝氏的時候學長提到conditional posterior distribution以及posterior distribution分別代表的是什麼? 學長提到conditional posterior distribution用Gibbs Sampling估而posterior distribution用MH algorithm估計，剛好後面談到實際如何去做估計的時候，也談到是用MH algorithm估shape & scale parameter，以及用Gibbs Sampling估correlation matrix of Gaussian Copula，請教學長這個conditional posterior distribution指的就是shape & scale parameter 、posterior distribution 指的就是Gaussian Copula嗎?
