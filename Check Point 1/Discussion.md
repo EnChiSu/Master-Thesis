@@ -6,9 +6,9 @@
 
 2. 關於「估計」─<br/>
    1. 在論述層級貝氏的時候學長提到conditional posterior distribution以及posterior distribution分別代表的是什麼? 學長提到conditional posterior distribution用Gibbs Sampling估而posterior distribution用MH algorithm估計，剛好後面談到實際如何去做估計的時候，也談到是用MH algorithm估shape & scale parameter，以及用Gibbs Sampling估correlation matrix of Gaussian Copula，請教學長這個conditional posterior distribution指的就是shape & scale parameter 、posterior distribution 指的就是Gaussian Copula嗎?
-   <p align="center">
-      <img src="https://drive.google.com/uc?export=view&id=10aNBlKbC_4BD4cseGxVyB7mHyJlkMJcv"></p>
-      2. 在R的實務操作上，所謂的Metropolis-within-Gibbs是先用Gibbs Sampling將conditional  posterior distribution(也就是multivariate gamma distribution)的參數估計出來，再將這個估計出來的參數值代入Metropolis Hasting中針對multivariate gamma distribution的posterior distribution進行估計嗎?
+      <p align="center">
+         <img src="https://drive.google.com/uc?export=view&id=10aNBlKbC_4BD4cseGxVyB7mHyJlkMJcv"></p>
+   2. 在R的實務操作上，所謂的Metropolis-within-Gibbs是先用Gibbs Sampling將conditional  posterior distribution(也就是multivariate gamma distribution)的參數估計出來，再將這個估計出來的參數值代入Metropolis Hasting中針對multivariate gamma distribution的posterior distribution進行估計嗎?
 
 3. 關於「預測」─<br/>
    1. 在透過Metropolis-within-Gibbs估出Hierarchical Bayesian Multivariate Gamma Model的posterior參數後，我們應該使用它的何種估計值(e.g.平均數)做為下一期的預測值?
