@@ -3,6 +3,8 @@
 1. 關於「模型的架構」─<br/>
    1. 透過Metropolis-Hasting Algorithm以及Gibbs Sampling的方式估計出Multivariate Gamma的parameter(scale、shape parameter以及correlation matrix)，那我們不就有我們想要的參數估計值能夠進行預測了嗎? 為什麼還需要用Gaussian Copula的方式，將估計出的correlation matrix代入Multivariate standard normal轉出一個Multivariate Gamma? 
    2. 承上，這個透過Gaussaian Copula轉出的Multivariate Gamma在我們的目標Hierarchical Bayesian Multivariate Gamma Model中扮演的腳色為何? 跟用直接用Metropolis-Hasting Algorithm以及Gibbs Sampling估計出參數的Multivariate Gamma的差異為何?
+   <p align="center">
+      <img src="https://drive.google.com/uc?export=view&id=17W6WdYEJ8wPvLv6kKjmTOLULBI0jwuef"></p>
    
 
 2. 關於「估計」─<br/>
