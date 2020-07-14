@@ -31,7 +31,7 @@
    設定一個分配，從這個分配中進行無限次的隨機抽樣(例如：Normal(0,1)，每次抽樣都來自這個平均數為0的Normal分布)
 
    2. Markov Chain<br/>
-   你的下一次抽樣(只)會受到這次資料的影響。在MCMC中代表的是我下次起跳基準點會來自左這次Monte Carlo抽樣的起跳基準點(例如：這次的起跳基準點是Normal(0.5,1)，是因為上次從Normal(0,1)跳到0.5，也就是每次Monte Carlo抽樣的分配都會不同)
+   你的下一次抽樣(只)會受到這次資料的影響。在MCMC中代表的是我下次起跳基準點會來自左這次Monte Carlo抽樣的起跳基準點(例如：這次的起跳基準點是Normal(0.5,1)，是因為上次從Normal(0,1)跳到0.5，也就是每次Monte Carlo抽樣的分配參數都會不同)
 
    3. Metropolis Hasting<br/>
    透過posterior的ratio比較新的proposal的機率與上一次的機率，如果大於1(也就是新的proposal的posterior大於前次的postrior)則我們一定接受這次的proposal，如果小於1則拿這個ratio去與一個從univorm(0,1)隨機抽出的機率比較，如果較大則我們接受這次的proposal，跳到那裡，如果較小則我們拒絕這次的proposal，留在原本的位置。<br/>
