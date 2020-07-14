@@ -35,6 +35,7 @@
 
    3. Metropolis Hasting<br/>
    透過posterior的ratio比較新的proposal的機率與上一次的機率，如果大於1(也就是新的proposal的posterior大於前次的postrior)則我們一定接受這次的proposal，如果小於1則拿這個ratio去與一個從univorm(0,1)隨機抽出的機率比較，如果較大則我們接受這次的proposal，跳到那裡，如果較小則我們拒絕這次的proposal，留在原本的位置。<br/>
+   (如此重複無限次，慢慢就會收斂到我們想估計參數的posterior上，我們可以透過對這些歷史跳動點取平均的方式，作為對這個參數的估計值)
     <p align="center">
       <img src="https://drive.google.com/uc?export=view&id=1_ISh5EZ-izq67fm5MKijcjclskPPSjOR"></p>
     新進的方法是Hamiltonian Monte Carlo(HMC)，即為目前很多建構機器學習方法的gradient decent(梯度下降)，將先前沒有特定方向的proposal改用梯度下降的方式(想像在一個碗裡面彈出一個鐵球)去引導proposal，因而每次提出的proposal都會往density大的方向前進(也就是碗底的方向)，不再有reject的情況，而變得非常有效率。而梯度下降演算法中鐵球的重量、重力的大小、跳的次數這些參數都可以調整，會進一步影響對posterior distribution建構的效率，因而需要進行調整。 (https://www.youtube.com/watch?v=v-j0UmWf3Us)
