@@ -45,7 +45,7 @@
     若碰到conditional distriubtions未知的情況，針對該維度的conditional distriubtions可以用Metropolis Hasting的方式求，搭配其餘已知的conditional distribution使用Gibbs Sampling求，結合在一起求得想了解的joint distirubtion(postrior distribution)，這樣的方法稱為[Metropolis within Gibbs](https://people.duke.edu/~ccc14/sta-663/MCMC.html#gibbs-sampler)。<br/>
     因而Gibbs Sampler其實可以視為一種特殊形態的Metropolis Hasting，它每一次新的proposal都是沿著特定某個維度方向上跳動，且每次跳動一定都被接受，因而大幅增進效率。但它的缺點是當不同維度之間彼此具有高度相關性時，可能會很沒有效率(因為每次跳動都是沿著某個維度跳動，下個跳動換另一個維度跳，也就是跳動受限於單一維度，不能斜著跳)。
     <p align="center">
-      <img src="https://drive.google.com/uc?export=view&id=17PokSmbplh_GUkHbXEYb93lD2U217cRj" width="500" height="500"></p>
+      <img src="https://drive.google.com/uc?export=view&id=17PokSmbplh_GUkHbXEYb93lD2U217cRj" width="500" height="400"></p>
       
     新進的方法是Hamiltonian Monte Carlo(HMC)，即為目前很多建構機器學習方法的gradient decent(梯度下降)，將先前沒有特定方向的proposal改用梯度下降的方式(想像在一個碗裡面彈出一個鐵球)去引導proposal，因而每次提出的proposal都會往density大的方向前進(也就是碗底的方向)，不再有reject的情況，而變得非常有效率。而梯度下降演算法中鐵球的重量、重力的大小、跳的次數這些參數都可以調整，會進一步影響對posterior distribution建構的效率，因而需要進行調整。 (https://www.youtube.com/watch?v=v-j0UmWf3Us)
 
