@@ -35,8 +35,8 @@
 
    3. Metropolis Hasting<br/>
    透過posterior的ratio比較新的proposal的機率與上一次的機率，如果大於1(也就是新的proposal的posterior大於前次的postrior)則我們一定接受這次的proposal，如果小於1則拿這個ratio去與一個從univorm(0,1)隨機抽出的機率比較，如果較大則我們接受這次的proposal，跳到那裡，如果較小則我們拒絕這次的proposal，留在原本的位置。(如此重複無限次，慢慢就會收斂到我們想估計參數的posterior上，我們可以透過對這些歷史跳動點取平均的方式，作為對這個參數的估計值)<br/>
-   實作範例：https://github.com/Joseph94m/MCMC/blob/master/MCMC.ipynb<br/>
-            https://twiecki.io/blog/2015/11/10/mcmc-sampling/
+   實作範例：1. https://github.com/Joseph94m/MCMC/blob/master/MCMC.ipynb<br/>
+            2. https://twiecki.io/blog/2015/11/10/mcmc-sampling/
     <p align="center">
       <img src="https://drive.google.com/uc?export=view&id=1_ISh5EZ-izq67fm5MKijcjclskPPSjOR"></p>
       
