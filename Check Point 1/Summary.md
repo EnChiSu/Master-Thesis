@@ -47,15 +47,17 @@
     [<p align="center">
       <img src="https://drive.google.com/uc?export=view&id=17PokSmbplh_GUkHbXEYb93lD2U217cRj" width="500" height="450"></p>](https://www.youtube.com/watch?v=ZvCYW8Ggby8)
       
-    新進的方法是Hamiltonian Monte Carlo(HMC)，即為目前很多建構機器學習方法的gradient decent(梯度下降)，將先前沒有特定方向的proposal改用梯度下降的方式(想像在一個碗裡面彈出一個鐵球)去引導proposal，因而每次提出的proposal都會往density大的方向前進(也就是碗底的方向)，不再有reject的情況，而變得非常有效率。而梯度下降演算法中鐵球的重量、重力的大小、跳的次數這些參數都可以調整，會進一步影響對posterior distribution建構的效率，因而需要進行調整。 (https://www.youtube.com/watch?v=v-j0UmWf3Us)
+    新進的方法是Hamiltonian Monte Carlo(HMC)，即為目前很多建構機器學習方法的gradient decent(梯度下降)，將先前沒有特定方向的proposal改用梯度下降的方式(想像在一個碗裡面彈出一個鐵球)去引導proposal，因而每次提出的proposal都會往density大的方向前進(也就是碗底的方向)，不再有reject的情況，而變得非常有效率。而梯度下降演算法中鐵球的重量、重力的大小、跳的次數這些參數都可以調整，會進一步影響對posterior distribution建構的效率，因而需要進行調整。 
+    [<p align="center">
+      <img src="https://drive.google.com/uc?export=view&id=15ySTwm2eQzuuN1ulwy_dvo2T9821VecW"></p>](https://www.youtube.com/watch?v=v-j0UmWf3Us)
 
 2. Hierarchical Bayesian Model：<br/>
 層級貝氏模型混和單一模型(common mean model)與個別模型(individual model)，使可以將模型無法解釋的部分拆解為組間的差異以及組內的差異。
-層級貝氏的作法就像是傳統回歸(也就是單一模型)的進一步延伸，傳統回歸背後假設資料服從一個特定平均數、變異數的常態分配。層級貝氏則往上加一層，資料所服從的分配的參數會服從另一個分配(也就是hyperparameter所代表的)。(https://www.youtube.com/watch?v=VssgU4Ey7ss)
-    <p align="center">
-      <img src="https://drive.google.com/uc?export=view&id=1Xb_TPxHxU_mydFQrs2H59c9HRcPNmOgL" width="700" height="400"></p>
-    <p align="center">
-      <img src="https://drive.google.com/uc?export=view&id=1AkM1EGuDFwVIdGHKjOYOIuuZ8LCpdVzl" width="1000" height="400"></p>
+層級貝氏的作法就像是傳統回歸(也就是單一模型)的進一步延伸，傳統回歸背後假設資料服從一個特定平均數、變異數的常態分配。層級貝氏則往上加一層，資料所服從的分配的參數會服從另一個分配(也就是hyperparameter所代表的)。
+    [<p align="center">
+      <img src="https://drive.google.com/uc?export=view&id=1Xb_TPxHxU_mydFQrs2H59c9HRcPNmOgL" width="700" height="400"></p>](https://www.youtube.com/watch?v=VssgU4Ey7ss)
+    [<p align="center">
+      <img src="https://drive.google.com/uc?export=view&id=1AkM1EGuDFwVIdGHKjOYOIuuZ8LCpdVzl" width="1000" height="400"></p>](https://www.youtube.com/watch?v=VssgU4Ey7ss)
     因而若想要使用MCMC估計層級貝氏所產生的posterior，在進行MCMC的迴圈時，必須將不同組的效果另立一個變數做代表，針對不同組跑回圈，使可以利用MCMC估計不同組的posterior。
     <p align="center">
       <img src="https://drive.google.com/uc?export=view&id=1ell7YNilD1RbGBkODnDu1WRuotv4Mvkh" width="800" height="400"></p>
