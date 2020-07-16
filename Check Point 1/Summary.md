@@ -62,13 +62,11 @@
     https://opendatascience.com/building-your-first-bayesian-model-in-r/  (單純用MCMC估計貝式posterior的R實作)<br/>
     https://medium.com/@ODSC/hierarchical-bayesian-models-in-r-9a18e6acdf2b  (加入層級貝氏用MCMC估計每一組posterior的R實作)
 
-3. Gaussian copula：<br/>
+3. [Gaussian copula](https://twiecki.io/blog/2018/05/03/copulas/)：<br/>
     Copula是用來描繪兩個不同變數關係的function。假定H(x,y)為一bivariate distribution，F(x)、G(y)為x、y的pdf，則存在一個唯一的copula函數C，使得H(x,y)=C(F(x),G(y))，因而可知C(u,v)=H(inverse F(u), inverse G(u))。而Gaussian copula即為假設F和G皆為Normal的情況。<br/>
     
     在本篇論文中，由於商品購買間格時間服從multivariate gamma distribution並且不同變數間具有某種相關性，但我們無法透過資料求出這個multivariate gamma distribution變數間相關性的close form解，因而透過gaussian copula轉換的方式(將原始分布透過cdf轉為Gaussian distribution)，將這些實證資料從multivariate gamma distribution轉換我們熟知的multivariate standard normal distribution，由於各個維度的conditional distribution皆為已知，因而就可以透過Gibbs Sampling的方式找出最符合資料的multivariate standard normal參數，以及我們想要了解的相關係數矩陣。
-    ，並將個別維度的marginal轉換成cdf(服從uniform distribution)，再根據這個marginal的cdf轉換為gamma distribution，聯合起來即為我們想要的multivariate gamma distribution，而這個joint distribution也能夠捕捉到我們最一開始設定的這個correlation matrix。(https://twiecki.io/blog/2018/05/03/copulas/)
     
-    根據Gibbs Sampling估計出來的相關性矩陣，隨機去產生我們較容易產生的multivariate standard normal distribution，並將個別維度的marginal轉換成cdf(服從uniform distribution)，再根據這個maginal的cdf轉換為gamma distribution，聯合起來即為我們想要的multivariate gamma distribution，而這個joint distribution也能夠捕捉到我們最一開始設定的這個correlation matrix。(https://twiecki.io/blog/2018/05/03/copulas/)
     <p align="center">
       <img src="https://drive.google.com/uc?export=view&id=1BOwBrZEQvq-ghGQkEM9iCwLj9GL24thX"></p>
     <p align="center">
