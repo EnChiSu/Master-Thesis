@@ -40,8 +40,8 @@
       <img src="https://drive.google.com/uc?export=view&id=1_ISh5EZ-izq67fm5MKijcjclskPPSjOR"></p>
       
     4. Gibbs Sampler<br/>
-    使用Gibbs Sampling的先決條件是必須要知道個別變數condition on其他所有變數的conditional distriubtions。在已知conditional distribution下，我就可以針對個別維度去進行抽樣，隨著取樣次數越多，個別維度會收斂趨近到真實的分布，將這些不同維度上模擬出來的資料點combine在一起得到的joint distribution也就會趨近那個你想要了解的posterior distribution(因為個別維度模擬的資料也都服從相對應的conditional distribution)。
-    若碰到conditional distriubtions未知的情況，針對該維度的conditional distriubtions可以用Metropolis Hasting的方式求，搭配其餘已知的conditional distribution使用Gibbs Sampling求，結合在一起求得想了解的joint distirubtion(postrior distribution)，這樣的方法稱為[Metropolis witin Gibbs](https://people.duke.edu/~ccc14/sta-663/MCMC.html#gibbs-sampler)。
+    使用Gibbs Sampling的先決條件是必須要知道個別變數condition on其他所有變數的conditional distriubtions。在已知conditional distribution下，我就可以針對個別維度去進行抽樣，隨著取樣次數越多，個別維度會收斂趨近到真實的分布，將這些不同維度上模擬出來的資料點combine在一起得到的joint distribution也就會趨近那個你想要了解的posterior distribution(因為個別維度模擬的資料也都服從相對應的conditional distribution)。<br/>
+    若碰到conditional distriubtions未知的情況，針對該維度的conditional distriubtions可以用Metropolis Hasting的方式求，搭配其餘已知的conditional distribution使用Gibbs Sampling求，結合在一起求得想了解的joint distirubtion(postrior distribution)，這樣的方法稱為[Metropolis witin Gibbs](https://people.duke.edu/~ccc14/sta-663/MCMC.html#gibbs-sampler)。<br/>
     因而Gibbs Sampler其實可以視為一種特殊形態的Metropolis Hasting，它每一次新的proposal都是沿著特定某個維度方向上跳動，且每次跳動一定都被接受，因而大幅增進效率。但它的缺點是當不同維度之間彼此具有高度相關性時，可能會很沒有效率(因為每次跳動都是沿著某個維度跳動，下個跳動換另一個維度跳，也就是跳動受限於單一維度，不能斜著跳)。
     <p align="center">
       <img src="https://drive.google.com/uc?export=view&id=17PokSmbplh_GUkHbXEYb93lD2U217cRj"></p>
