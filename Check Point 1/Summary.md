@@ -37,15 +37,15 @@
    透過posterior的ratio比較新的proposal的機率與上一次的機率，如果大於1(也就是新的proposal的posterior大於前次的postrior)則我們一定接受這次的proposal，如果小於1則拿這個ratio去與一個從univorm(0,1)隨機抽出的機率比較，如果較大則我們接受這次的proposal，跳到那裡，如果較小則我們拒絕這次的proposal，留在原本的位置。(如此重複無限次，慢慢就會收斂到我們想估計參數的posterior上，我們可以透過對這些歷史跳動點取平均的方式，作為對這個參數的估計值)<br/>
    實作範例：1. https://github.com/Joseph94m/MCMC/blob/master/MCMC.ipynb<br/>
                2. https://twiecki.io/blog/2015/11/10/mcmc-sampling/
-    [<p align="center">
-      <img src="https://drive.google.com/uc?export=view&id=1_ISh5EZ-izq67fm5MKijcjclskPPSjOR"></p>](https://www.youtube.com/watch?v=ZvCYW8Ggby8)
+    <p align="center">
+      <img src="https://drive.google.com/uc?export=view&id=1_ISh5EZ-izq67fm5MKijcjclskPPSjOR"></p>
       
     4. Gibbs Sampler<br/>
     使用Gibbs Sampling的先決條件是必須要知道個別變數condition on其他所有變數的conditional distriubtions。在已知conditional distribution下，我就可以針對個別維度去進行抽樣，隨著取樣次數越多，個別維度會收斂趨近到真實的分布，將這些不同維度上模擬出來的資料點combine在一起得到的joint distribution也就會趨近那個你想要了解的posterior distribution(因為個別維度模擬的資料也都服從相對應的conditional distribution)。<br/>
     若碰到conditional distriubtions未知的情況，針對該維度的conditional distriubtions可以用Metropolis Hasting的方式求，搭配其餘已知的conditional distribution使用Gibbs Sampling求，結合在一起求得想了解的joint distirubtion(postrior distribution)，這樣的方法稱為[Metropolis within Gibbs](https://people.duke.edu/~ccc14/sta-663/MCMC.html#gibbs-sampler)。<br/>
     因而Gibbs Sampler其實可以視為一種特殊形態的Metropolis Hasting，它每一次新的proposal都是沿著特定某個維度方向上跳動，且每次跳動一定都被接受，因而大幅增進效率。但它的缺點是當不同維度之間彼此具有高度相關性時，可能會很沒有效率(因為每次跳動都是沿著某個維度跳動，下個跳動換另一個維度跳，也就是跳動受限於單一維度，不能斜著跳)。
-    <p align="center">
-      <img src="https://drive.google.com/uc?export=view&id=17PokSmbplh_GUkHbXEYb93lD2U217cRj" width="500" height="450"></p>
+    [<p align="center">
+      <img src="https://drive.google.com/uc?export=view&id=17PokSmbplh_GUkHbXEYb93lD2U217cRj" width="500" height="450"></p>](https://www.youtube.com/watch?v=ZvCYW8Ggby8)
       
     新進的方法是Hamiltonian Monte Carlo(HMC)，即為目前很多建構機器學習方法的gradient decent(梯度下降)，將先前沒有特定方向的proposal改用梯度下降的方式(想像在一個碗裡面彈出一個鐵球)去引導proposal，因而每次提出的proposal都會往density大的方向前進(也就是碗底的方向)，不再有reject的情況，而變得非常有效率。而梯度下降演算法中鐵球的重量、重力的大小、跳的次數這些參數都可以調整，會進一步影響對posterior distribution建構的效率，因而需要進行調整。 (https://www.youtube.com/watch?v=v-j0UmWf3Us)
 
