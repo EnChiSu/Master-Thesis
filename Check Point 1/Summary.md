@@ -24,7 +24,7 @@
       <img src="https://drive.google.com/uc?export=view&id=17W6WdYEJ8wPvLv6kKjmTOLULBI0jwuef"></p>
       
 1. MCMC：<br/>
-使用的緣由是我們沒有使用conjugate prior的情況下，並不知道posterior的分布長甚麼樣子，透過對這個posterior進行多次的抽樣了解這個分布在不同位置的density。這樣的概念下開發出幾個不同的演算法，包含Metropolis Hasting Algorithm、Gibbs Sampling，主要的概念都是透過guess(隨機提一個proposal，也就是隨機抽樣)，然後check(看這個樣本的機率有沒有大過你設定的門檻，如果有則跳到這個新的proposal的位置並提下一個proposal繼續探索，如果沒有則在原位置提新的proposal，詳見下一段Metropolis Hasting的說明例子)，如此可以慢慢建立出posterior分布的輪廓。然而，Metropolis Hasting這樣的方法的問題在於它並沒有限制proposal的方向，所以可能會提了很多最後被 reject掉的proposal造成演算法很沒有效率，相對應能夠避免此問題的演算法包含Gibbs Sampling以及Hamiltonian Monte Carlo。(https://www.youtube.com/watch?v=OTO1DygELpY)<br/>(https://twiecki.io/blog/2015/11/10/mcmc-sampling/)<br/>
+使用的緣由是我們沒有使用conjugate prior的情況下，並不知道posterior的分布長甚麼樣子，透過對這個posterior進行多次的抽樣了解這個分布在不同位置的density。這樣的概念下開發出幾個不同的演算法，包含Metropolis Hasting Algorithm、Gibbs Sampling，主要的概念都是透過guess(隨機提一個proposal，也就是隨機抽樣)，然後check(看這個樣本的機率有沒有大過你設定的門檻，如果有則跳到這個新的proposal的位置並提下一個proposal繼續探索，如果沒有則在原位置提新的proposal，詳見下一段Metropolis Hasting的說明例子)，如此可以慢慢建立出posterior分布的輪廓。然而，Metropolis Hasting這樣的方法的問題在於它並沒有限制proposal的方向，所以可能會提了很多最後被 reject掉的proposal造成演算法很沒有效率，相對應能夠避免此問題的演算法包含Gibbs Sampling以及Hamiltonian Monte Carlo。(https://www.youtube.com/watch?v=OTO1DygELpY)<br/>
 
    * MCMC的Metropolis Hasting & Gibbs Sampling詳細介紹：<br/>
    1. Monte Carlo<br/>
@@ -35,7 +35,8 @@
 
    3. Metropolis Hasting<br/>
    透過posterior的ratio比較新的proposal的機率與上一次的機率，如果大於1(也就是新的proposal的posterior大於前次的postrior)則我們一定接受這次的proposal，如果小於1則拿這個ratio去與一個從univorm(0,1)隨機抽出的機率比較，如果較大則我們接受這次的proposal，跳到那裡，如果較小則我們拒絕這次的proposal，留在原本的位置。(如此重複無限次，慢慢就會收斂到我們想估計參數的posterior上，我們可以透過對這些歷史跳動點取平均的方式，作為對這個參數的估計值)<br/>
-   實作範例：https://github.com/Joseph94m/MCMC/blob/master/MCMC.ipynb
+   實作範例：https://github.com/Joseph94m/MCMC/blob/master/MCMC.ipynb<br/>
+            https://twiecki.io/blog/2015/11/10/mcmc-sampling/
     <p align="center">
       <img src="https://drive.google.com/uc?export=view&id=1_ISh5EZ-izq67fm5MKijcjclskPPSjOR"></p>
       
