@@ -14,7 +14,7 @@
 </p>
 <br/>
 
-### 二、這兩周的進度
+### 二、這三周的進度
 在這兩周我完整讀了2017年統研所李京諭學長所撰寫的「[以多變量Gamma Distribution探討多品項購買期間的相關性](https://www.airitilibrary.com/Publication/alDetailedMesh1?DocID=U0001-2306201712014100)」，並且了解當中使用的三個方法(MCMC、Hierarchical Bayesian Model、Copula)和Python及R的實作方式。論文當中還有一些概念間的串接自己還沒完全領悟，以下會概括描述自己對整篇論文的理解，以及在三個所使用方法所做的認識。
 
 這篇論文中，學長混和MCMC的Gibbs Sampler以及Metropolis Hasting去建構Hierarchical Bayesian Multivariate Gamma Model中的Shape、Scale parameter以及Correlation matrix of Copula model，進而去預測兩兩不同商品的購買時間間格，並與MLE法估計建構出的層級貝式模型去做預測上的優劣比較。<br/>
@@ -24,7 +24,7 @@
       <img src="https://drive.google.com/uc?export=view&id=17W6WdYEJ8wPvLv6kKjmTOLULBI0jwuef"></p>
       
 1. MCMC：<br/>
-使用的緣由是我們沒有使用conjugate prior的情況下，並不知道posterior的分布長甚麼樣子，透過對這個posterior進行多次的抽樣了解這個分布在不同位置的density。這樣的概念下開發出幾個不同的演算法，包含Metropolis Hasting Algorithm、Gibbs Sampling，主要的概念都是透過guess(隨機提一個proposal，也就是隨機抽樣)，然後check(看這個樣本的機率有沒有大過你設定的門檻，如果有則跳到這個新的proposal的位置並提下一個proposal繼續探索，如果沒有則在原位置提新的proposal，詳見下一段Metropolis Hasting的說明例子)，如此可以慢慢建立出posterior分布的輪廓。然而，這樣方法的問題在於它並沒有限制proposal的方向，所以可能會提了很多最後被 reject掉的proposal造成演算法很沒有效率。(https://www.youtube.com/watch?v=OTO1DygELpY)<br/>(https://twiecki.io/blog/2015/11/10/mcmc-sampling/)<br/>
+使用的緣由是我們沒有使用conjugate prior的情況下，並不知道posterior的分布長甚麼樣子，透過對這個posterior進行多次的抽樣了解這個分布在不同位置的density。這樣的概念下開發出幾個不同的演算法，包含Metropolis Hasting Algorithm、Gibbs Sampling，主要的概念都是透過guess(隨機提一個proposal，也就是隨機抽樣)，然後check(看這個樣本的機率有沒有大過你設定的門檻，如果有則跳到這個新的proposal的位置並提下一個proposal繼續探索，如果沒有則在原位置提新的proposal，詳見下一段Metropolis Hasting的說明例子)，如此可以慢慢建立出posterior分布的輪廓。然而，Metropolis Hasting這樣的方法的問題在於它並沒有限制proposal的方向，所以可能會提了很多最後被 reject掉的proposal造成演算法很沒有效率，相對應能夠避免此問題的演算法包含Gibbs Sampling以及Hamiltonian Monte Carlo。(https://www.youtube.com/watch?v=OTO1DygELpY)<br/>(https://twiecki.io/blog/2015/11/10/mcmc-sampling/)<br/>
 
    * MCMC的Metropolis Hasting & Gibbs Sampling詳細介紹：<br/>
    1. Monte Carlo<br/>
@@ -39,9 +39,13 @@
     <p align="center">
       <img src="https://drive.google.com/uc?export=view&id=1_ISh5EZ-izq67fm5MKijcjclskPPSjOR"></p>
       
-    4. Gibbs Sampling<br/>
-    使用Gibbs Sampling的先決條件是必須要知道個別變數的conditional distriubtions
-    
+    4. Gibbs Sampler<br/>
+    使用Gibbs Sampling的先決條件是必須要知道個別變數condition on其他所有變數的conditional distriubtions。在已知conditional distribution下，我就可以針對個別維度去進行抽樣，隨著取樣次數越多，個別維度會收斂趨近到真實的分布，將這些不同維度上模擬出來的資料點combine在一起得到的joint distribution也就會趨近那個你想要了解的posterior distribution(因為個別維度模擬的資料也都服從相對應的conditional distribution)。
+    若碰到conditional distriubtions未知的情況，針對該維度的conditional distriubtions可以用Metropolis Hasting的方式求，搭配其餘已知的conditional distribution使用Gibbs Sampling求，結合在一起求得想了解的joint distirubtion(postrior distribution)，這樣的方法稱為[Metropolis wihtin Gibbs](https://people.duke.edu/~ccc14/sta-663/MCMC.html#gibbs-sampler)。
+    因而Gibbs Sampler其實可以視為一種特殊形態的Metropolis Hasting，它每一次新的proposal都是沿著特定某個維度方向上跳動，且每次跳動一定都被接受，因而大幅增進效率。但它的缺點是當不同維度之間彼此具有高度相關性時，可能會很沒有效率(因為每次跳動都是沿著某個維度跳動，下個跳動換另一個維度跳，也就是跳動受限於單一維度，不能斜著跳)。
+    <p align="center">
+      <img src="https://drive.google.com/uc?export=view&id=17PokSmbplh_GUkHbXEYb93lD2U217cRj"></p>
+      
     新進的方法是Hamiltonian Monte Carlo(HMC)，即為目前很多建構機器學習方法的gradient decent(梯度下降)，將先前沒有特定方向的proposal改用梯度下降的方式(想像在一個碗裡面彈出一個鐵球)去引導proposal，因而每次提出的proposal都會往density大的方向前進(也就是碗底的方向)，不再有reject的情況，而變得非常有效率。而梯度下降演算法中鐵球的重量、重力的大小、跳的次數這些參數都可以調整，會進一步影響對posterior distribution建構的效率，因而需要進行調整。 (https://www.youtube.com/watch?v=v-j0UmWf3Us)
 
 2. Hierarchical Bayesian Model：<br/>
