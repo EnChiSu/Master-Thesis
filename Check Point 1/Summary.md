@@ -63,8 +63,9 @@
       <img src="https://drive.google.com/uc?export=view&id=1ell7YNilD1RbGBkODnDu1WRuotv4Mvkh" width="800" height="400"></p>
     R的實作如以下兩個連結。<br/>
     https://opendatascience.com/building-your-first-bayesian-model-in-r/  (單純用MCMC估計貝式posterior的R實作)<br/>
-    https://medium.com/@ODSC/hierarchical-bayesian-models-in-r-9a18e6acdf2b  (加入層級貝氏用MCMC估計每一組posterior的R實作)
+    https://medium.com/@ODSC/hierarchical-bayesian-models-in-r-9a18e6acdf2b  (加入層級貝氏用MCMC估計每一組posterior的R實作)<br/>
     
+    在本篇論文中(不同商品的購買間格時間)的層級貝氏模型架構：
     <p align="center">
       <img src="https://drive.google.com/uc?export=view&id=15NFGzPQS3w5QDS3uc5SGA5JCokRfd-so"></p>
 
