@@ -46,7 +46,7 @@ High autocorrelation would make algorithm inefficient. Espeically in the slow mi
 Other method that can test the performance of the MCMC algorithm is through comparing results from multiple MCMC simulations with different starting point or proposal density parameters. One way to test whether the algorithm has converged is through "Scale Reduction factor", which can be computed as 
    <p align="center">
        <img src="https://drive.google.com/uc?export=view&id=1XnRTE5XUrmT_3Cl3_7xO08-vxSS0OgUn"></p>
-Since the variance between chains should decrease as the chains converge, the within variance should approaches the total variance, which make the index close to 1.
+   Since the variance between chains should decrease as the chains converge, the within variance should approaches the total variance, which make the index close to 1.
    <p align="center">
        <img src="https://drive.google.com/uc?export=view&id=1dGD2-dnBAw6Y-alBxqZ2tRRH6U9G5OKw"></p>
 
