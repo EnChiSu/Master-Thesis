@@ -1,7 +1,7 @@
 # Assess *Performance* of MCMC algorithm
 There are two things that we should watch closely when we use MCMC algorithm: **convergence** and **mixing**. "Convergence" means the Markov Chain converges to the appropriate density (the psterior density). "Mixing" means the Markov Chain samples from all areas of the density once it has converged. In these cases, we can promise the distribution we found through the MCMC algorithm approach stablely to our target distribution.<br/>
 <br/>
-However, you don't know how many iterations would need to reach convergence and mixing well. Convergence and mixing may be especially affected by a number of factors, including:
+However, you don't know how many iterations would need to reach convergence and mixing well. Convergence and mixing may be affected by a number of factors, including:
 * The starting values for the parameters
 * The shape of the posterior distribution
 * The choice of proposal density in an MH algorithm
