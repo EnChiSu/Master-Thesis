@@ -18,18 +18,18 @@ We can firstly use trace plot to inpsect visually and calculate the mean and sta
 The acceptance rate can reflect the converge performance of the MCMC. If the acceptance rate is 0%, the algorithm would never converge. In contrast, if the acceptance rate is 99%, the algorithm converge very slowly. The ideal acceptance rate would be around **50% or slightly lower**. More generally, a rate between 25% and 75% is often acceptable.<br/>
 Two factors influence the acceptance rate:<br/>
 
-   1. jump size<br/>
-   The jump size is determined by the variane or width of the proposal density. The narrower it is the smaller each step is. Thus, it would have higher acceptance rate, but it would also takes a large numver of iterations before the algorithm mixes thoroughly. On the other hand, the wider it is the larger each step is. In this case, the algorithm would move quickly from one end of the posterior density to the other and converge early. However, because of the high rejection rate around the tail, it has the problem that stick in one place for long periods of time before moving.
-   <p align="center">
-     <img src="https://drive.google.com/uc?export=view&id=13xvatwT5iOC-cbvuTf0tARHilVLE-4Fw"></p>
+    1. jump size<br/>
+    The jump size is determined by the variane or width of the proposal density. The narrower it is the smaller each step is. Thus, it would have higher acceptance rate, but it would also takes a large numver of iterations before the algorithm mixes thoroughly. On the other hand, the wider it is the larger each step is. In this case, the algorithm would move quickly from one end of the posterior density to the other and converge early. However, because of the high rejection rate around the tail, it has the problem that stick in one place for long periods of time before moving.
+    <p align="center">
+      <img src="https://drive.google.com/uc?export=view&id=13xvatwT5iOC-cbvuTf0tARHilVLE-4Fw"></p>
       
-   2. shape of the proposal density<br/>
-   The concordance of the shape of the posterior distribution and proposal density would increase acceptance rate. 
-   <p align="center">
-      <img src="https://drive.google.com/uc?export=view&id=1ScfEW8LLJaa5TLHiABWhaKNfCc-vkmg9"></p><br/>
-   Besides, we should also consider the correlation between different parameters. A conmmon source of poor mixing and/or slow convergence in MH algorithms is strong posterior correlation of the parameters.
-   <p align="center">
-     <img src="https://drive.google.com/uc?export=view&id=1njVEGngcInsYy6W6-BXHIx16bEYUuFwd"></p>
+    2. shape of the proposal density<br/>
+    The concordance of the shape of the posterior distribution and proposal density would increase acceptance rate. 
+    <p align="center">
+       <img src="https://drive.google.com/uc?export=view&id=1ScfEW8LLJaa5TLHiABWhaKNfCc-vkmg9"></p><br/>
+    Besides, we should also consider the correlation between different parameters. A conmmon source of poor mixing and/or slow convergence in MH algorithms is strong posterior correlation of the parameters.
+    <p align="center">
+      <img src="https://drive.google.com/uc?export=view&id=1njVEGngcInsYy6W6-BXHIx16bEYUuFwd"></p>
    
 3. Autocorrelation of parameter<br/>
 
