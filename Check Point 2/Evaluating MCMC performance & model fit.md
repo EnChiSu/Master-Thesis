@@ -17,13 +17,13 @@ We can firstly use trace plot to inpsect visually and calculate the mean and sta
 2. Acceptance rate (of MCMC algorithm)<br/>
 The acceptance rate can reflect the converge performance of the MCMC. If the acceptance rate is 0%, the algorithm would never converge. In contrast, if the acceptance rate is 99%, the algorithm converge very slowly. The ideal acceptance rate would be around **50% or slightly lower**. More generally, a rate between 25% and 75% is often acceptable.<br/>
 <br/>
-Two factors influence the acceptance rate:
-   1. jump size
+Two factors influence the acceptance rate:<br/>
+    1. jump size<br/>
    
-   <p align="center">
-     <img src="https://drive.google.com/uc?export=view&id=1BLG2f9fL0QmaJ599f_BGwd9El0wWU905"></p>
+    <p align="center">
+      <img src="https://drive.google.com/uc?export=view&id=1BLG2f9fL0QmaJ599f_BGwd9El0wWU905"></p>
       
-   2. shape of the proposal density
+    2. shape of the proposal density<br/>
 
 
 3. Autocorrelation of parameter<br/>
