@@ -35,7 +35,7 @@ Two factors influence the acceptance rate:<br/>
 High autocorrelation would make algorithm inefficient. Espeically in the slow mixing scenario, which exacerbate autocorrelation, there are two solutions for the problem. 
    1. Thinning the chain<br/>
    Take every k th sampled value. K is determined by the number of lags beyond which autocorrelation of sampled values is small enough to ignore. The function of ACF is
-    <p align="center">
+   <p align="center">
        <img src="https://drive.google.com/uc?export=view&id=1oK8IjVdkMI4DKxBSHMB4oe8Xc7Y2Exd-"></p>
    2. Batch means<br/>
    Compute the means of every block of k sampled values and treats the batch mean as the sampled value.
