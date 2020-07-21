@@ -8,7 +8,7 @@ However, you don't know how many iterations would need to reach convergence and 
 
 The following methods can help us to better understand how well our MCMC algorithm perform. It is important to note that there is no definitive way of assessing convergence and mixing. No single method can guarantee that the algorithm have converged or mixed thoroughly. We have to look our result from multiple perspective before making the conclusion.
 
-1. Trace Plot
+1. Trace Plot<br/>
 We can firstly use trace plot to inpsect visually and calculate the mean and standard deviation of certain number of iterations. For example, after 400 iterations the MCMC converge, but if we iterate even further we can find that after 1000 iterations the posterior distribution might cover broader range than we thought. Thus, it is important to use different methods to inspect our result.
 <p align="center">
   <img src="https://drive.google.com/uc?export=view&id=1BLG2f9fL0QmaJ599f_BGwd9El0wWU905">
