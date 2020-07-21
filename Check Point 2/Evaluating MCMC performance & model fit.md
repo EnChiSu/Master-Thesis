@@ -26,8 +26,8 @@ Two factors influence the acceptance rate:<br/>
    2. shape of the proposal density<br/>
    The concordance of the shape of the posterior distribution and proposal density would increase acceptance rate. 
    <p align="center">
-     <img src="https://drive.google.com/uc?export=view&id=1ScfEW8LLJaa5TLHiABWhaKNfCc-vkmg9"></p>
-    Besides, we should also consider the correlation between different parameters. A conmmon source of poor mixing and/or slow convergence in MH algorithms is strong posterior correlation of the parameters.
+      <img src="https://drive.google.com/uc?export=view&id=1ScfEW8LLJaa5TLHiABWhaKNfCc-vkmg9"></p><br/>
+   Besides, we should also consider the correlation between different parameters. A conmmon source of poor mixing and/or slow convergence in MH algorithms is strong posterior correlation of the parameters.
    <p align="center">
      <img src="https://drive.google.com/uc?export=view&id=1njVEGngcInsYy6W6-BXHIx16bEYUuFwd"></p>
    
