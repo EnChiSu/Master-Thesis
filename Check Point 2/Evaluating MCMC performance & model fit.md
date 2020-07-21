@@ -18,12 +18,12 @@ We can firstly use trace plot to inpsect visually and calculate the mean and sta
 The acceptance rate can reflect the converge performance of the MCMC. If the acceptance rate is 0%, the algorithm would never converge. In contrast, if the acceptance rate is 99%, the algorithm converge very slowly. The ideal acceptance rate would be around **50% or slightly lower**. More generally, a rate between 25% and 75% is often acceptable.<br/>
 <br/>
 Two factors influence the acceptance rate:
-   1. jump size<br/>
-   The jump size is determined by the variane or width of the proposal density. The narrower it is the smaller each step is. Thus, it would have higher acceptance rate, but it would also takes a large numver of iterations before the algorithm mixes thoroughly. On the other hand, the wider it is the larger each step is. In this case, the algorithm would move quickly from one end of the posterior density to the other and converge early. However, it is also 
-   <p align="center">
-     <img src="https://drive.google.com/uc?export=view&id=13xvatwT5iOC-cbvuTf0tARHilVLE-4Fw"></p>
+    1. jump size<br/>
+    The jump size is determined by the variane or width of the proposal density. The narrower it is the smaller each step is. Thus, it would have higher acceptance rate, but it would also takes a large numver of iterations before the algorithm mixes thoroughly. On the other hand, the wider it is the larger each step is. In this case, the algorithm would move quickly from one end of the posterior density to the other and converge early. However, it is also 
+    <p align="center">
+      <img src="https://drive.google.com/uc?export=view&id=13xvatwT5iOC-cbvuTf0tARHilVLE-4Fw"></p>
       
-   2. shape of the proposal density<br/>
+    2. shape of the proposal density<br/>
 
 
 3. Autocorrelation of parameter<br/>
