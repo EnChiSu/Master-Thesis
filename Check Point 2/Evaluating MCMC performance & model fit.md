@@ -52,12 +52,12 @@ Other method that can test the performance of the MCMC algorithm is through comp
 
 
 # Assess *Model Fit*
-1. Residual Analysis
+1. Residual Analysis<br/>
 Under Bayesian approach, we will get a distribution of the parameters and thus a distribution of residuals for each obesrvation in the data set. With the distribution of errors, we can construct "tests" to determine whether the error distribution is significantly different from 0. Or we can compute the propostion of errors that exceed some value q. A model that produces a relatively high average proportion of errors exceeding the criterion q may be deemed a poorly fitting model.<br/>
 One of the limitation of the method is that it is primarily only useful in a regression model setting.
 
 
-2. Posterior predictive distribution (PPD)
+2. Posterior predictive distribution (PPD)<br/>
 One of the advantage of PPD is that it captures two undertainties: (1) Parametric uncertainty (2) Sampling uncertainty.<br/>
    1. Parametric uncertainty<br/>
    You can imagine this as the "variance of posterior distribution".
