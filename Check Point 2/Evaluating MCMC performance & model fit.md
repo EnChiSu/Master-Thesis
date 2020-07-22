@@ -40,7 +40,8 @@ High autocorrelation would make algorithm inefficient. Espeically in the slow mi
        
    2. Batch means<br/>
    Compute the means of every block of k sampled values and treats the batch mean as the sampled value.
-
+   <p align="center">
+       <img src="https://drive.google.com/uc?export=view&id=1M2HMRwoOEi_3SMlIdIuMh4vUt52b4Sfa"></p>
 
 4. Scale Reduction factor and Others<br/>
 Other method that can test the performance of the MCMC algorithm is through comparing results from multiple MCMC simulations with different starting point or proposal density parameters. One way to test whether the algorithm has converged is through "Scale Reduction factor", which can be computed as 
