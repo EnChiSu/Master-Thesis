@@ -75,7 +75,7 @@ One of the advantage of PPD is that it captures two undertainties: (1) Parametri
    , which represent the proportion of replicated future data sets whose function values T(y rep) exceed that of the function T(y) applied to the original data.<br/>
    <br/>
 * **Comparing model fit**
-3. Bayes factors
+3. Bayes factors<br/>
 Extending the idea of PPD, we might want to know which parameters combinations are the best model. We can calculate the conditional probability of prediction model 1 versus prediction model 2 given the same sample data, which can present as:
    <p align="center">
        <img src="https://drive.google.com/uc?export=view&id=17uJKHYwJM24wP5D50HJSDmyiA6rPrgd8"></p>
@@ -85,12 +85,11 @@ Extending the idea of PPD, we might want to know which parameters combinations a
    <p align="center">
        <img src="https://drive.google.com/uc?export=view&id=188CE8DzEB52pSJS6HRYRhNFlk8S14MEH"></p>
 
-4. Bayesian model averaging
+4. Bayesian model averaging<br/>
 Instead of using Bayes factor to find the "best" model, the Bayesian model averaging approach essentially "combines" all models in a class of models based on each parameters' prior as weight to generate inference about parameters.
    <p align="center">
        <img src="https://drive.google.com/uc?export=view&id=1s8aIxZiF_wtG950Jniyw9CTZpHTh4uLX"></p>
 
 <br/>
 <br/>
-Reference: <br/>
-Introduction to Applied Bayesian Statistics and Estimation for Social Scientists by Scott M. Lynch 
+Reference: Introduction to Applied Bayesian Statistics and Estimation for Social Scientists by Scott M. Lynch 
