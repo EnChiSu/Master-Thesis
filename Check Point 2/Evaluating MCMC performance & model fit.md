@@ -73,6 +73,7 @@ One of the advantage of PPD is that it captures two undertainties: (1) Parametri
    <p align="center">
        <img src="https://drive.google.com/uc?export=view&id=1kH0-1Ff572fj-S_-WLxYPBV8kxOiXPp0"></p>
    , which represent the proposrtion of replicated future data sets whose function values T(y rep) exceed that of the function T(y) applied to the original data.<br/>
+   <br/>
 * Comparing model fit<br/>
 3. Bayes factors
 
