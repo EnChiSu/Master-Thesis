@@ -68,7 +68,11 @@ One of the advantage of PPD is that it captures two undertainties: (1) Parametri
 With the help of probability density for future observations, we can make prediction base on the observed sample data: (y rep denote furutre observation)
    <p align="center">
        <img src="https://drive.google.com/uc?export=view&id=1y9oYH926VCv5KA4y3wQDLEbMEXrlTPNF"></p>
-If a model fits the data well, future data simulated from the model should look like the current data. 
+If a model fits the data well, future data simulated from the model should look like the current data. We can conduct Bayesian p-values to determine whether the simulated and observed data are similar. The p-value is
+   <p align="center">
+       <img src="https://drive.google.com/uc?export=view&id=1kH0-1Ff572fj-S_-WLxYPBV8kxOiXPp0"></p>
+, which represent the proposrtion of replicated future data sets whose function values T(y rep) exceed that of the function T(y) applied to the original data.
+
 3. Bayes factors
 
 
