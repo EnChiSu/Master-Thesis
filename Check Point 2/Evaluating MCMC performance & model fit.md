@@ -72,11 +72,18 @@ One of the advantage of PPD is that it captures two undertainties: (1) Parametri
    If a model fits the data well, future data simulated from the model should look like the current data. We can conduct Bayesian p-values to determine whether the simulated and observed data are similar. The p-value is
    <p align="center">
        <img src="https://drive.google.com/uc?export=view&id=1kH0-1Ff572fj-S_-WLxYPBV8kxOiXPp0"></p>
-   , which represent the proposrtion of replicated future data sets whose function values T(y rep) exceed that of the function T(y) applied to the original data.<br/>
+   , which represent the proportion of replicated future data sets whose function values T(y rep) exceed that of the function T(y) applied to the original data.<br/>
    <br/>
 * **Comparing model fit**
 3. Bayes factors
-
+Extending the idea of PPD, we might want to know which parameters combinations are the best model. We can calculate the conditional probability of prediction model 1 versus prediction model 2 given the same sample data, which can present as:
+   <p align="center">
+       <img src="https://drive.google.com/uc?export=view&id=17uJKHYwJM24wP5D50HJSDmyiA6rPrgd8"></p>
+The ratio of the marginal likelihood for the data, once the parametric uncertainty in each model is integrated out (as below shows), is called the **Bayes factor**. If the ratio is greater than 1 implies that model 1 is favored; less than 1 implies that model 2 is favored; equal to 1 implies that neither model is preferable.
+   <p align="center">
+       <img src="https://drive.google.com/uc?export=view&id=1RHoyqHTpc1gTT0AH6RaWpms8nXUiubKJ"></p>
+   <p align="center">
+       <img src="https://drive.google.com/uc?export=view&id=188CE8DzEB52pSJS6HRYRhNFlk8S14MEH"></p>
 
 4. Bayesian model averaging
 
