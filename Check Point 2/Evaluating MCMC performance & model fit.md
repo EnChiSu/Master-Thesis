@@ -93,4 +93,4 @@ Instead of using Bayes factor to find the "best" model, the Bayesian model avera
 
 <br/>
 <br/>
-Reference: Introduction to Applied Bayesian Statistics and Estimation for Social Scientists by Scott M. Lynch 
+Reference: Chapter 6 of Introduction to Applied Bayesian Statistics and Estimation for Social Scientists by Scott M. Lynch 
