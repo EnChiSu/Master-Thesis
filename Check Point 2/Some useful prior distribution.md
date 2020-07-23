@@ -16,7 +16,10 @@
    Besides, the **inverse gamma** distribution is used as a conjugate prior for the **variance** in a normal model. If the normal distribution is parameterized with a precision parameter rather than with a variance parameter, the **gamma** distribution is appropriate as a conjugate prior distribution for the **precision parameter**. 
    
    Note: <br/>
-   In a normal model, if an inverse gamma distribution is used as the prior for the variance, the marginal distribution for the mean is a **t distribution**.
+   1. In a normal model, if an inverse gamma distribution is used as the prior for the variance, the marginal distribution for the mean is a **t distribution**.
+   2. Gamma & inverse gamma are general distribution: 
+      1. Gamma(a=1,b) == exp(1/b)
+      2. Gamma(a=v/2,b=1/2) == Chi(df=v)
 
 3. **Wishart and Inverse Wishart distribution**<br/>
 
