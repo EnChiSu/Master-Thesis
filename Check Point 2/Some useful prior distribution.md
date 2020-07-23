@@ -6,7 +6,7 @@
    Just as the beta distribution is a conjugate prior for the binomial distribution, the Dirichlet is a conjugate prior for the multinomial distribution.
    <p align="center">
      <img src="https://drive.google.com/uc?export=view&id=1SYZeE4_kubcR9XVUIYmKVN8tTJ6nUur_"></p>
-
+<br/>
 2. **Inverse Gamma distribution**<br/>
    If 1/x ~ gamma(a,b), then x ~ IG(a,b). The density function for the inverse gamma distribution is:
    <p align="center">
@@ -20,7 +20,7 @@
    2. Gamma & inverse gamma are general distribution: 
       1. Gamma(a=1,b) == exp(1/b)
       2. Gamma(a=v/2,b=1/2) == Chi(df=v)
-
+<br/>
 3. **Wishart and Inverse Wishart distribution**<br/>
    Wishart and Inverse Wishart distribution ar emultivariate generalization of the gamma and inverse gamma distributions, respectively. Thus, just as the inverse gamma is a conjugate prior density for the variance in a univariate normal model, the inverse Wishart is a conjugate prior density for the variance-covariance matrix in a multivariate normal model. 
    If X ~ Wishart(S), where S is a scale matrix of dimension d and v is the degrees of freedom, then
