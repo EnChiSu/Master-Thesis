@@ -60,7 +60,7 @@ One of the limitation of the method is that it is primarily only useful in a reg
 
 
 2. Posterior predictive distribution (PPD)<br/>
-One of the advantage of PPD is that it captures two undertainties: (1) Parametric uncertainty (2) Sampling uncertainty.<br/>
+One of the advantage of PPD is that it captures two uncertainties: (1) Parametric uncertainty (2) Sampling uncertainty.<br/>
    1. Parametric uncertainty<br/>
    You can imagine this as the "variance of posterior distribution".
    2. Samping uncertainty<br/>
