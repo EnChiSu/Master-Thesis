@@ -1,5 +1,5 @@
 # Some useful prior distribution
-1. The Dirichlet distribution<br/>
+1. The **Dirichlet distribution**<br/>
    The Dirichlet distribution is a multivariate generalization of the beta distribution. If X is a k-dimensional vector and X~Dirichlet(a1, a2, a3,...), then:
    <p align="center">
      <img src="https://drive.google.com/uc?export=view&id=1vqq8XPqpCnIzo-ptsIAe2kFMJYE96HHS"></p>
@@ -7,7 +7,7 @@
    <p align="center">
      <img src="https://drive.google.com/uc?export=view&id=1SYZeE4_kubcR9XVUIYmKVN8tTJ6nUur_"></p>
 
-2. The Inverse Gamma distribution<br/>
+2. The **Inverse Gamma distribution**<br/>
    If 1/x ~ gamma(a,b), then x ~ IG(a,b). The density function for the inverse gamma distribution is:
    <p align="center">
      <img src="https://drive.google.com/uc?export=view&id=1JXT89IH-WqkUEexgSfvSIXY5JrUgKei_"></p>
@@ -18,7 +18,8 @@
    Note: <br/>
    In a normal model, if an inverse gamma distribution is used as the prior for the variance, the marginal distribution for the mean is a **t distribution**.
 
-3. Wishart and Inverse Wishart distribution<br/>
+3. **Wishart and Inverse Wishart distribution**<br/>
 
 
-R
+
+Reference: Introduction to Applied Bayesian Statistics and Estimation for Social Scientists by Scott M. Lynch
