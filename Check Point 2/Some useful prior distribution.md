@@ -1,5 +1,5 @@
 # Some useful prior distribution
-1. The **Dirichlet distribution**<br/>
+1. **Dirichlet distribution**<br/>
    The Dirichlet distribution is a multivariate generalization of the beta distribution. If X is a k-dimensional vector and X~Dirichlet(a1, a2, a3,...), then:
    <p align="center">
      <img src="https://drive.google.com/uc?export=view&id=1vqq8XPqpCnIzo-ptsIAe2kFMJYE96HHS"></p>
@@ -7,7 +7,7 @@
    <p align="center">
      <img src="https://drive.google.com/uc?export=view&id=1SYZeE4_kubcR9XVUIYmKVN8tTJ6nUur_"></p>
 
-2. The **Inverse Gamma distribution**<br/>
+2. **Inverse Gamma distribution**<br/>
    If 1/x ~ gamma(a,b), then x ~ IG(a,b). The density function for the inverse gamma distribution is:
    <p align="center">
      <img src="https://drive.google.com/uc?export=view&id=1JXT89IH-WqkUEexgSfvSIXY5JrUgKei_"></p>
@@ -22,7 +22,18 @@
       2. Gamma(a=v/2,b=1/2) == Chi(df=v)
 
 3. **Wishart and Inverse Wishart distribution**<br/>
+   Wishart and Inverse Wishart distribution ar emultivariate generalization of the gamma and inverse gamma distributions, respectively. Thus, just as the inverse gamma is a conjugate prior density for the variance in a univariate normal model, the inverse Wishart is a conjugate prior density for the variance-covariance matrix in a multivariate normal model. 
+   If X ~ Wishart(S), where S is a scale matrix of dimension d and v is the degrees of freedom, then
+   <p align="center">
+     <img src="https://drive.google.com/uc?export=view&id=1W6IlKGydh2vPNLqW7ARXHBp4PNBi_eC2"></p>
+   If X ~ inverse Wishart(1/S), then
+   <p align="center">
+     <img src="https://drive.google.com/uc?export=view&id=1BvyoaiyF2Qro30OfarRXb9skZ7xOR9ca"></p>
+   The assuption for both the Wishart and inverse Wishart distributions is that X and S are both positive definite; that is, z^T X z > 0 and z^T S z > 0 for any non-zero vector z of length d.
+   
+   Note:<br/>
+   With an inverse Wishart distribution for the variance-covariance matrix in a multivariate normal model, the marginal distribution for the mean vector is multivariate t.
 
 
 
-Reference: Introduction to Applied Bayesian Statistics and Estimation for Social Scientists by Scott M. Lynch
+Reference: Chapter 3.5 of Introduction to Applied Bayesian Statistics and Estimation for Social Scientists by Scott M. Lynch
