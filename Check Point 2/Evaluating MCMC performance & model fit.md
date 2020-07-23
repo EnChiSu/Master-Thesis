@@ -67,7 +67,7 @@ One of the advantage of PPD is that it captures two uncertainties: (1) Parametri
    It's the sampling density for the data. You can also imagine this as the likelihood function. It is directly associate with the posterior distribution as below shows.
    <p align="center">
        <img src="https://drive.google.com/uc?export=view&id=10asetiDA0O5GJBEMzgjEaf0LmORol3Zi"></p>
-   With the help of probability density for future observations, we can make prediction base on the observed sample data: (y rep denote furutre observation)
+   With the help of probability density for future observations, we can make prediction base on the observed sample data: (y rep denote future observation)
    <p align="center">
        <img src="https://drive.google.com/uc?export=view&id=1y9oYH926VCv5KA4y3wQDLEbMEXrlTPNF"></p>
    If a model fits the data well, future data simulated from the model should look like the current data. We can conduct Bayesian p-values to determine whether the simulated and observed data are similar. The p-value is
