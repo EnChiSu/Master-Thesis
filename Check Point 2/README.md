@@ -16,4 +16,5 @@ This is the documentation of my reading summary of in the past 2 weeks:<br/>
 The fast developing of Southeast Asia draw huge interest from companies around the globe. Not only because the salary level remains low, but the demographic divident bring strong buying power for the regional market. <br/>
 Although, the prospect of ASEAN looks bright from the macro perspective, the division between each member states is huge. First is the culture and the language. The additive cost for companies to localize their products or services becomes huge barriers for medium size company. It is important for companies to assess market circumstances with different economics index. Second is the assessment tools. It becomes difficult for company to measure their effect of their marketing program under different market. <br/>
 The Hierarchical Bayesian model provide a useful tools for us to measure market status of the country level and assess the important economics factors under different countries.
+
    
