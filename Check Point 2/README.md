@@ -1,6 +1,6 @@
 This is the documentation of my reading summary of in the past 2 weeks:<br/>
 
-1. About Gibbs Sampling, Metropolis Hasting and Evaluation of MCMC algorithms (reference: Introduction to Applied Bayesian Statistics and Estimation for Social Scientists)
+1. About Gibbs Sampling, Metropolis Hasting and Evaluation of MCMC algorithms <br/>(reference: Introduction to Applied Bayesian Statistics and Estimation for Social Scientists)
    1. Gibbs Sampling
    2. Metropolis Hasting
    3. [Evaluation](https://github.com/EnChiSu/Master-Thesis/blob/master/Check%20Point%202/Evaluating%20MCMC%20performance%20%26%20model%20fit.md)
