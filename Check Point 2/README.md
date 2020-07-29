@@ -11,7 +11,7 @@ This is the documentation of my reading summary of in the past 2 weeks:<br/>
    2. [Application of Hierarchical Bayesian Approach and Genetic Algorithms in illustrating customer preference and market segmentation](http://www.scu.edu.tw/ba/2005conference/2005paper/marketing1.pdf) (整合層級貝氏及基因演算法在顧客偏好解讀與市場區隔上之應用)
    3.	[An Economic Growth Model Using Hierarchical Bayesian Model](https://www.researchgate.net/publication/336159969_An_Economic_Growth_Model_Using_Hierarchical_Bayesian_Method)
    4.	[Bayesian Hierarchical Random Intercept Model Based on Three Parameter Gamma Distribution](https://iopscience.iop.org/article/10.1088/1742-6596/855/1/012061)
-   5. [Small Area Estimation of Expenditure Per-capita in Banyuwangi with Hierarchical Bayesian and Empirical Bayes Methods](http://iptek.its.ac.id/index.php/jos/article/view/3185)
+   5. [Small Area Estimation of Expenditure Per-capita in Banyuwangi with Hierarchical Bayesian and Empirical Bayes Methods](http://iptek.its.ac.id/index.php/jos/article/view/3185)<br/>
    In this paper, the author compared two Small Area Estimation(SAE) models that are SAE model with Hierarichical Bayes method and SAE model with Emiprical Bayes method in expenditure per capita population per sub district in Banyuwangi in Indonesia.
 3. Some idea for the thesis topic<br/>
 The fast developing of Southeast Asia draw huge interest from companies around the globe. Not only because the salary level remains low, but the demographic divident bring strong buying power for the regional market. <br/><br/>
