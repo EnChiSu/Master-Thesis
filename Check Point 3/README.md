@@ -1,7 +1,7 @@
 This is the summary of my reading documentation of the past 2 weeks:<br/>
 
-1. Book Review:<br/>
-About Hierarchical models
+1. Book Review:<br/>(reference: [Introduction to Applied Bayesian Statistics and Estimation for Social Scientists](https://www.springer.com/gp/book/9780387712642))
+   1. Hierarchical models in general (Ch9)
 
 
 2. Literature Review:<br/>
