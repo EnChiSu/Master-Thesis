@@ -9,4 +9,8 @@ This is the summary of my reading documentation of the past 2 weeks:<br/>
    In this paper, it presents how to apply Hierarchical Bayesian(HB) and Empirical Bayes(EB) on the Small Area Estimation Method, which is often used to estimate parameters for sub-level in the data and solve the problem that the sub-level of the data isn't large enough. The author shows that with the help of HB and EB, the RMSE of SAE is smaller comparing with direct estimator. Additoinally, the RMSE of estimator from HB is even smaller than the EB. <br/>
    In this paper, the author compared two Small Area Estimation(SAE) models that are SAE model with Hierarichical Bayes method and SAE model with Emiprical Bayes method in expenditure per capita population per sub district in Banyuwangi in Indonesia. Both mehods are indirect estimation comparing with using Maximum Likelihood to estimate parameters, which is the direct method. The result shows that both indirect methods have smaller RMSE than direct estimation. Further more, the SAE model with Hierarichical Bayes method generate better prediction result (smaller RMSE) of experditure per capita than the SAE model with Emiprical Bayes method.
    2. [Modeling of Per Capital Household Expenditure in Tanzania using Bayesian Two Levels Hierarchical Log-Logistic Approach_The Case Study of Dodoma Region](http://sersc.org/journals/index.php/IJAST/article/view/22911)
+   
+3. Some idea for the research topic:<br/>
+   This [kaggle competition](https://www.kaggle.com/grosvenpaul/family-income-and-expenditure) provides an interesting dataset of household expenditure in Philippines. It seems like the hierarchical model can suit it well.
+   
 
