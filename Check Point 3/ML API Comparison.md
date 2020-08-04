@@ -17,7 +17,8 @@
 > ● Keras 2.3.0 的發佈，Francois 聲明：1. 這是 Keras 首個與 tf.keras 同步的版本；2. 這也是 Keras 支持多個後端（即 Theano，CNTK 等）的最終版本；3. 所有深度學習從業人員都應將其代碼轉換成 TensorFlow 2.0 和 tf.keras 軟件包。
 
 ### Summary:<br/>
-簡單來說，Keras是易於使用的機器學習前端API介面，而Tensorflow則是API介面背後負責運算的引擎。目前Tensorflow 2.0已經納入Keras包裹，並且為Keras持續更新的包裹(又稱tf.keras)，原本獨立於Tensorflow之外的Keras包裹將不再更新(或說只會針對現有的進行錯誤修復，但不會有新的功能)，因而往後應使用tf.keras包裹進行模型訓練。
+簡單來說，Keras是易於使用的機器學習前端API介面，而Tensorflow則是API介面背後負責運算的引擎。<br/>
+目前Tensorflow 2.0已經納入Keras包裹，並且為Keras持續更新的包裹(又稱tf.keras)，原本獨立於Tensorflow之外的Keras包裹將不再更新(或說只會針對現有的進行錯誤修復，但不會有新的功能)，因而往後應使用tf.keras包裹進行模型訓練。
 
 
 <br/>
