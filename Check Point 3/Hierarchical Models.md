@@ -51,31 +51,36 @@ In this chapter, the author provide two applcations of Hierarchical Models:
          <p align="center">
          <img src="https://render.githubusercontent.com/render/math?math=y_{it}= \alpha_i + e_{it}" width="100" height="35"></p>
          where alpha is group level variable and e is individual random error term as below
-      <p align="center">
+         <p align="center">
          <img src="https://render.githubusercontent.com/render/math?math=\alpha_i ~ N(\alpha, \tau^2) " width="100" height="35"></p>
-      <p align="center">
+         <p align="center">
          <img src="https://render.githubusercontent.com/render/math?math=e_{it} ~ N(0, \sigma^2)" width="100" height="35"></p>
-      which can also present as:
-      <p align="center">
+         which can also present as:
+         <p align="center">
          <img src="https://drive.google.com/uc?export=view&id=1TU_rkJGLiiwHPIOPDNGr1B5pHAH30odb"></p>
-      To derive the estimate for each parameter, we can follow steps as the previous section shows, which we derive the posterior distribution
-      <p align="center">
+         To derive the estimate for each parameter, we can follow steps as the previous section shows, which we derive the posterior distribution
+         <p align="center">
          <img src="https://drive.google.com/uc?export=view&id=1BERmI2fzyEsUhVNQqEzd7j5Zpdo56V7v"></p>
-      and then we derive conditional posterior distribution of each parameter. Finally, we can use Gibbs Sampler or Metropolis Hasting to make the inference.   
+         and then we derive conditional posterior distribution of each parameter. Finally, we can use Gibbs Sampler or Metropolis Hasting to make the inference.   
       
       2. use a regression to illustrate the random effect
          1. add a binary variable (e.g. sex)
-         <p align="center">
+            <p align="center">
             <img src="https://drive.google.com/uc?export=view&id=1a_ndUpPRjMFkKGJ1N4I8Rw-2iaX1sZ9v"></p>
+            we can further derive estimastes for each parameter following previous steps. 
          
          2. add a continuous variable (e.g. Internet usage amount)
-         <p align="center">
+            <p align="center">
             <img src="https://drive.google.com/uc?export=view&id=1cHHzSNwadBmGOB0lHBEQpbRw2_Gcvke7"></p>
-         
+            we can further derive estimastes for each parameter following previous steps.
       
    2. Random coefficient model<br/>
-   In the previous section, we use single coefficient to represent all individual levels. 
-   
+   In the previous section, we use single coefficient to represent the effect from the Internet variable. However, the effect may be different among different individual levels. Thus, by adding this variation (with one more sub-index under alpha), our model becomes:
+   <p align="center">
+     <img src="https://drive.google.com/uc?export=view&id=1yNg-Ilx1cWA1uq3qLq4ezu3H3qGVtYHi"></p>   
+   Consider the interaction between different variable, we can put our two variables under different levels, then it becomes
+   <p align="center">
+     <img src="https://drive.google.com/uc?export=view&id=1f5a1dUjaQy-rm4eEIgR_9pFtqfzRFeiR"></p>  
    3. Growth model<br/>
    
    
