@@ -66,11 +66,11 @@ In this chapter, the author provide two applcations of Hierarchical Models:
       2. (level 2) use a regression to illustrate the random effect
          1. add a binary variable (e.g. sex)
          <p align="center">
-            <img src="https://drive.google.com/uc?export=view&id=1qqZFzwXwn1NhyvW92gGK0b8xg2SaQMJr"></p>
+            <img src="https://drive.google.com/uc?export=view&id=1a_ndUpPRjMFkKGJ1N4I8Rw-2iaX1sZ9v"></p>
          
          2. add a continuous variable (e.g. Internet usage amount)
          <p align="center">
-            <img src="https://drive.google.com/uc?export=view&id=1qqZFzwXwn1NhyvW92gGK0b8xg2SaQMJr"></p>
+            <img src="https://drive.google.com/uc?export=view&id=1cHHzSNwadBmGOB0lHBEQpbRw2_Gcvke7"></p>
          
       
    2. Random coefficient model<br/>
