@@ -1,3 +1,4 @@
+Hierarchical mdoels are models in which there is some sort of hierarchical structure to the parameters and potentially to the covariates if the model is a regression model.<br/>
 In this chapter, the author provide two applcations of Hierarchical Models:
 
 1. Capturing the effect and relationship between parameters with hierarchical level
