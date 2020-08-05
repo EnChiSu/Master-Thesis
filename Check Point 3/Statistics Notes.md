@@ -1,0 +1,2 @@
+1. 層級貝式模型可以用來單純描繪parameter之間的階層關係，也可以用來描繪具階層關係的資料。
+2. 捕捉data中的隨機性，就好比捕捉parameter的隨機性，中間不容易想像的gap我們很容易想data是一堆數值，而parameter只是一個數值。但實際上因為parameter本身也是我們未知的，只要想像這個parameter代表著背後一群data，這個data又符合某個分布，我們透過MCMC的方式求取這個分布的posterior distribution的重要參數來了解這個parameter的合理推估值。
