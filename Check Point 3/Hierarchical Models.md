@@ -11,7 +11,7 @@ In this chapter, the author provide two applcations of Hierarchical Models:
    For example,
    We know that the election polling result follow beta distribution as below,
    <p align="center">
-      <img src="https://render.githubusercontent.com/render/math?math=x_i~Beta(\alpha, \beta, K)" width="100" height="35"></p>
+      <img src="https://render.githubusercontent.com/render/math?math=x_i~Beta(\alpha, \beta, K)" width="300" height="35"></p>
    Our goal is to know the posterior distribution's parameters given our data as below,
    <p align="center">
       <img src="https://drive.google.com/uc?export=view&id=1V4dP23rIzLve2LyqheMLlx02XDXETIhU"></p>
