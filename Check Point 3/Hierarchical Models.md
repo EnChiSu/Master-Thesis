@@ -1,7 +1,7 @@
 **Hierarchical models** are models in which there is some sort of hierarchical structure to the parameters and potentially to the covariates if the model is a regression model.<br/>
 In this chapter, the author provide two applcations of Hierarchical Models:
 
-1. Capturing the effect and relationship between parameters with hierarchical level<br/>
+1. Capturing the effect and relationship between parameters with hierarchical level (the model parameters are structured hierarchically)<br/>
    The Bayes' theorem is often expressed as:<br/>
    <p align="center">
       <img src="https://render.githubusercontent.com/render/math?math=p(\theta|data) \propto p(data| \theta) \times p(\theta)" width="300" height="35"></p>
@@ -45,13 +45,18 @@ In this chapter, the author provide two applcations of Hierarchical Models:
    The remaining unkown part is the parameters of hyperprior, C and D. Given parameters C and D, the mean of a gamma distribution is equal to C/D, and the variance is equal to C/D^2. We my choos e to set these parameters at values that reflect our prior knowledge.The typical poll conducted throughout the fall by different polling organizations consisted of about 500 or potential voters, roughly half of the voters are expected to vote for Kerry. So, we may choose C/D=250. We can capture prior uncertainty in this estimate by specifying the variance to be large since we have little knowledge about it. For example, we assume the variance C/D^2=10000. Thus, we can find C=6.25 and D=0.025. From now on, we know all the conditional posterior distribution for each parameter, and can use Gibbs Sampler to do the inference.<br/>  
    
    
-2. Capturing the linear regression model with hierarchical level<br/>
+2. Capturing the linear regression model with hierarchical level (the data are measured at differenct levels / hierarchical sttructure to the data, need multilevel modeling)<br/>
    1. Random Intercept model<br/>
-   
-   
-   
+      1. (level 1) with single intercept
+      
+      
+      2. (level 2) use a regression to explain the random effect
+         1. add a binary variable (e.g. sex)
+         
+         2. add a continuous variable (e.g. Internet usage amount)
+      
    2. Random coefficient model<br/>
-   
+   In the previous section, we use single coefficient to represent all individual levels. 
    
    3. Growth model<br/>
    
