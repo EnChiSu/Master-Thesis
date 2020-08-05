@@ -50,7 +50,7 @@ In this chapter, the author provide two applcations of Hierarchical Models:
       1. (level 1) with single intercept
       <p align="center">
          <img src="https://render.githubusercontent.com/render/math?math=y_{it}= \alpha_i + e_{it}" width="100" height="35"></p>
-        where alpha is group level variable and e is individual random error term as below
+       where alpha is group level variable and e is individual random error term as below
       <p align="center">
          <img src="https://render.githubusercontent.com/render/math?math=\alpha_i ~ N(\alpha, \tau^2) " width="100" height="35"></p>
       <p align="center">
