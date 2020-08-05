@@ -2,7 +2,7 @@
 In this chapter, the author provide two applcations of Hierarchical Models:
 
 1. Capturing the effect and relationship between parameters with hierarchical level<br/>
-   The Bayes' Theotem is often expressed as:<br/>
+   The Bayes' theorem is often expressed as:<br/>
    <p align="center">
       <img src="https://render.githubusercontent.com/render/math?math=p(\theta|data) \propto p(data| \theta) \times p(\theta)" width="300" height="35"></p>
    <p align="center">
