@@ -88,6 +88,8 @@ In this chapter, the author provide two applcations of Hierarchical Models:
       <p align="center">
       <img src="https://drive.google.com/uc?export=view&id=1H5JyS7COGEO4QZ4jf-vRKa2ODP1IJnw6"></p>  
    3. Growth model<br/>
-   
+      Besides, in social science, we usually want to look at the effect under different timeframe and use time as our explanatory variable. Then, our model may look like:
+      <p align="center">
+      <img src="https://drive.google.com/uc?export=view&id=1qg_050mebdFd5Zr2XTzPeLmdTjPI-LdG"></p>  
    
    
