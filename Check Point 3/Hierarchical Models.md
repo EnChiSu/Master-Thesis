@@ -47,18 +47,23 @@ In this chapter, the author provide two applcations of Hierarchical Models:
    
 2. Capturing the linear regression model with hierarchical level (the data are measured at differenct levels / hierarchical sttructure to the data, need multilevel modeling)<br/>
    1. Random Intercept model<br/>
-      1. (level 1) with single intercept
+      1. (level 1) with intercept model to illustrate the random effect<br/>
       <p align="center">
          <img src="https://render.githubusercontent.com/render/math?math=y_{it}= \alpha_i + e_{it}" width="100" height="35"></p>
-       where alpha is group level variable and e is individual random error term as below
+      where alpha is group level variable and e is individual random error term as below
       <p align="center">
          <img src="https://render.githubusercontent.com/render/math?math=\alpha_i ~ N(\alpha, \tau^2) " width="100" height="35"></p>
       <p align="center">
          <img src="https://render.githubusercontent.com/render/math?math=e_{it} ~ N(0, \sigma^2)" width="100" height="35"></p>
+      which can also present as:
+      <p align="center">
+         <img src="https://drive.google.com/uc?export=view&id=1TU_rkJGLiiwHPIOPDNGr1B5pHAH30odb"></p>
+      To derive the estimate for each parameter, we can follow steps as the previous section shows, which we derive the posterior distribution
+      <p align="center">
+         <img src="https://drive.google.com/uc?export=view&id=1BERmI2fzyEsUhVNQqEzd7j5Zpdo56V7v"></p>
+      and then we derive conditional posterior distribution of each parameter. Finally, we can use Gibbs Sampler or Metropolis Hasting to make the inference.   
       
-   
-      
-      2. (level 2) use a regression to explain the random effect
+      2. (level 2) use a regression to illustrate the random effect
          1. add a binary variable (e.g. sex)
          <p align="center">
             <img src="https://drive.google.com/uc?export=view&id=1qqZFzwXwn1NhyvW92gGK0b8xg2SaQMJr"></p>
