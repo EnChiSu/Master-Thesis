@@ -44,4 +44,15 @@ In this chapter, the author provide two applcations of Hierarchical Models:
       <img src="https://drive.google.com/uc?export=view&id=1qqZFzwXwn1NhyvW92gGK0b8xg2SaQMJr"></p>
    
    
-2. Capturing the linear regression model with hierarchical level
+2. Capturing the linear regression model with hierarchical level<br/>
+   1. Random Intercept model<br/>
+   
+   
+   
+   2. Random coefficient model<br/>
+   
+   
+   3. Growth model<br/>
+   
+   
+   
