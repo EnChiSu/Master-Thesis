@@ -27,5 +27,21 @@ In this chapter, the author provide two applcations of Hierarchical Models:
    We can further simplify the posterior distribution leaving items related to our parameters, which becomes
    <p align="center">
       <img src="https://drive.google.com/uc?export=view&id=1_t6d3_gmOBs66o9HmT31N9i7r0fT9SU4"></p>
+   As we know the posterior distribution, we can find the conditional posterior distribution for each parameter repectively to further derive the proper estimation using MCMC. The conditional posterior distribution for K is
+   <p align="center">
+      <img src="https://drive.google.com/uc?export=view&id=1TMK7avAtMBHTdg7JOQxSf4SNDx68uUJX"></p>
+   The conditional posterior distribution for alpha is (which need a little trick to simplify it)
+   <p align="center">
+      <img src="https://drive.google.com/uc?export=view&id=13i1HNUsG8KYns4V031d5KSBsCvAm47Vw"></p>
+   The conditional posterior distribution for beta is (which need a little trick to simplify it)
+   <p align="center">
+      <img src="https://drive.google.com/uc?export=view&id=1OQB_7dQcFOegk1gyLPFMCfnqdfID0SWU"></p>
+   Since the joint marginal distribution p(a,B) is unkown, we assume an appropriate distribution that would constrain thes parameters to be non-negative is the gamma distribtuion. The two parameters in gamma distribution we use C and D the represent. Besides, we assume that the alpha and beta have independent prior distributions, then the joint marginal distribution would equal to the product of each one's marginal distribution, which can be shown as
+   <p align="center">
+      <img src="https://drive.google.com/uc?export=view&id=1S05qW8YbdBjzehXrB3kxil08FNPIlwHN"></p>
+   Then, we can derive the full conditional posterior distribution for alpha: (A comparable result can be obtained for beta)
+   <p align="center">
+      <img src="https://drive.google.com/uc?export=view&id=1qqZFzwXwn1NhyvW92gGK0b8xg2SaQMJr"></p>
+   
    
 2. Capturing the linear regression model with hierarchical level
