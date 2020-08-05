@@ -9,9 +9,26 @@ In this chapter, the author provide two applcations of Hierarchical Models:
       <img src="https://render.githubusercontent.com/render/math?math=posterior \propto likelihood \times prior" width="300" height="35"></p>
    This equation itself reveals a simple hierarchical structure in the pararmeters, becasue it says that a posterior distribution for a parameter is equal to a conditional distribution for data under the parameter (first level) multivplied by the marginal (prior) probability for the parameter (a second, higher, level). Put another way, the posterior distribution is the prior distribution weighted by the observed information.<br/>
    For example,
+   We know that the election polling result follow beta distribution as below,
    <p align="center">
-      <img src="https://render.githubusercontent.com/render/math?math=y_{ig}~Q( \theta_g)" width="100" height="35"></p>
-
-
-
+      <img src="https://render.githubusercontent.com/render/math?math=x_i~Beta(\alpha, \beta, K)" width="100" height="35"></p>
+   Our goal is to know the posterior distribution's parameters given our data as below,
+   <p align="center">
+      <img src="https://render.githubusercontent.com/render/math?math=p( \alpha, \beta, K | X) \proptp p(K|X) p(K| \alpha, \beta) p(\alpha, \beta)" width="100" height="35"></p>
+   ,which can also denote as:
+   <p align="center">
+      <img src="https://render.githubusercontent.com/render/math?math=posterior \proptp likelihood \times prior \times hyperprior" width="100" height="35"></p>
+   Since we also know likelihood follows binomial distribution, which can be shown as:
+   <p align="center">
+      <img src="https://render.githubusercontent.com/render/math?math=x_i~Beta(\alpha, \beta, K)" width="100" height="35"></p>
+   and prior for each K follows beta distribution, 
+   <p align="center">
+      <img src="https://render.githubusercontent.com/render/math?math=x_i~Beta(\alpha, \beta, K)" width="100" height="35"></p>
+   , we can derive the posterior distribution,
+   <p align="center">
+      <img src="https://render.githubusercontent.com/render/math?math=x_i~Beta(\alpha, \beta, K)" width="100" height="35"></p>
+   We can further simplify the posterior distribution leaving items related to our parameters, which becomes
+   <p align="center">
+      <img src="https://render.githubusercontent.com/render/math?math=x_i~Beta(\alpha, \beta, K)" width="100" height="35"></p>
+   
 2. Capturing the linear regression model with hierarchical level
