@@ -52,9 +52,9 @@ In this chapter, the author provide two applcations of Hierarchical Models:
          <img src="https://render.githubusercontent.com/render/math?math=y_{it}= \alpha_i + e_{it}" width="100" height="35"></p>
       where
       <p align="center">
-         <img src="https://render.githubusercontent.com/render/math?math=\alpha_i ~ N(\alpha, \tau^2) \alpha \text {is group level variable} " width="100" height="35"></p>
+         <img src="https://render.githubusercontent.com/render/math?math=\alpha_i ~ N(\alpha, \tau^2) \alpha \text {is group level variable} " width="300" height="35"></p>
       <p align="center">
-         <img src="https://render.githubusercontent.com/render/math?math=e_{it} ~ N(0, \sigma^2) e_{it} \text {is individual random error term}" width="100" height="35"></p>
+         <img src="https://render.githubusercontent.com/render/math?math=e_{it} ~ N(0, \sigma^2) e_{it} \text {is individual random error term}" width="300" height="35"></p>
       
    
       
