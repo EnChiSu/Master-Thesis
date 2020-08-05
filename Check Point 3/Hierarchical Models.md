@@ -83,10 +83,10 @@ In this chapter, the author provide two applcations of Hierarchical Models:
       <img src="https://drive.google.com/uc?export=view&id=1f5a1dUjaQy-rm4eEIgR_9pFtqfzRFeiR"></p>  
       In a traditional regression form, it looks like:
       <p align="center">
-      <img src="https://drive.google.com/uc?export=view&id=1f5a1dUjaQy-rm4eEIgR_9pFtqfzRFeiR"></p>  
+      <img src="https://drive.google.com/uc?export=view&id=182V9WVxpijcL8iKFttTJc4uCA29njbMC"></p>  
       , which can be rewritten as
       <p align="center">
-      <img src="https://drive.google.com/uc?export=view&id=1f5a1dUjaQy-rm4eEIgR_9pFtqfzRFeiR"></p>  
+      <img src="https://drive.google.com/uc?export=view&id=1H5JyS7COGEO4QZ4jf-vRKa2ODP1IJnw6"></p>  
    3. Growth model<br/>
    
    
