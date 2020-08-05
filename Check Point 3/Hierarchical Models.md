@@ -48,12 +48,25 @@ In this chapter, the author provide two applcations of Hierarchical Models:
 2. Capturing the linear regression model with hierarchical level (the data are measured at differenct levels / hierarchical sttructure to the data, need multilevel modeling)<br/>
    1. Random Intercept model<br/>
       1. (level 1) with single intercept
+      <p align="center">
+         <img src="https://render.githubusercontent.com/render/math?math=y_{it}= \alpha_i + e_{it}" width="200" height="35"></p>
+      where
+      <p align="center">
+         <img src="https://render.githubusercontent.com/render/math?math=\alpha_i ~ N(\alpha, \tau^2)" width="200" height="35"></p>
+      <p align="center">
+         <img src="https://render.githubusercontent.com/render/math?math=e_{it} ~ N(0, \sigma^2)" width="200" height="35"></p>
       
+   
       
       2. (level 2) use a regression to explain the random effect
          1. add a binary variable (e.g. sex)
+         <p align="center">
+            <img src="https://drive.google.com/uc?export=view&id=1qqZFzwXwn1NhyvW92gGK0b8xg2SaQMJr"></p>
          
          2. add a continuous variable (e.g. Internet usage amount)
+         <p align="center">
+            <img src="https://drive.google.com/uc?export=view&id=1qqZFzwXwn1NhyvW92gGK0b8xg2SaQMJr"></p>
+         
       
    2. Random coefficient model<br/>
    In the previous section, we use single coefficient to represent all individual levels. 
