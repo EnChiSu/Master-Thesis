@@ -42,6 +42,7 @@ In this chapter, the author provide two applcations of Hierarchical Models:
    Then, we can derive the full conditional posterior distribution for alpha: (A comparable result can be obtained for beta)
    <p align="center">
       <img src="https://drive.google.com/uc?export=view&id=1qqZFzwXwn1NhyvW92gGK0b8xg2SaQMJr"></p>
+   The remaining unkown part is the parameters of hyperprior, C and D. Given parameters C and D, the mean of a gamma distribution is equal to C/D, and the variance is equal to C/D^2. We my choos e to set these parameters at values that reflect our prior knowledge.The typical poll conducted throughout the fall by different polling organizations consisted of about 500 or potential voters, roughly half of the voters are expected to vote for Kerry. So, we may choose C/D=250. We can capture prior uncertainty in this estimate by specifying the variance to be large since we have little knowledge about it. For example, we assume the variance C/D^2=10000. Thus, we can find C=6.25 and D=0.025. From now on, we know all the conditional posterior distribution for each parameter, and can use Gibbs Sampler to do the inference.<br/>  
    
    
 2. Capturing the linear regression model with hierarchical level<br/>
