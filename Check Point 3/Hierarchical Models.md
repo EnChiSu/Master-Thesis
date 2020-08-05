@@ -47,10 +47,10 @@ In this chapter, the author provide two applcations of Hierarchical Models:
    
 2. Capturing the linear regression model with hierarchical level (the data are measured at differenct levels / hierarchical sttructure to the data, need multilevel modeling)<br/>
    1. Random Intercept model<br/>
-      1. (level 1) with intercept model to illustrate the random effect<br/>
-      <p align="center">
+      1. with intercept model to illustrate the random effect<br/>
+         <p align="center">
          <img src="https://render.githubusercontent.com/render/math?math=y_{it}= \alpha_i + e_{it}" width="100" height="35"></p>
-      where alpha is group level variable and e is individual random error term as below
+         where alpha is group level variable and e is individual random error term as below
       <p align="center">
          <img src="https://render.githubusercontent.com/render/math?math=\alpha_i ~ N(\alpha, \tau^2) " width="100" height="35"></p>
       <p align="center">
@@ -63,7 +63,7 @@ In this chapter, the author provide two applcations of Hierarchical Models:
          <img src="https://drive.google.com/uc?export=view&id=1BERmI2fzyEsUhVNQqEzd7j5Zpdo56V7v"></p>
       and then we derive conditional posterior distribution of each parameter. Finally, we can use Gibbs Sampler or Metropolis Hasting to make the inference.   
       
-      2. (level 2) use a regression to illustrate the random effect
+      2. use a regression to illustrate the random effect
          1. add a binary variable (e.g. sex)
          <p align="center">
             <img src="https://drive.google.com/uc?export=view&id=1a_ndUpPRjMFkKGJ1N4I8Rw-2iaX1sZ9v"></p>
