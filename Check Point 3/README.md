@@ -1,7 +1,7 @@
 This is the summary of my reading documentation of the past 2 weeks:<br/>
 
 1. Book Review:<br/>(reference: [Introduction to Applied Bayesian Statistics and Estimation for Social Scientists](https://www.springer.com/gp/book/9780387712642))
-   1. Hierarchical models in general (Ch9)
+   * Hierarchical models (Ch9)
 
 
 2. Literature Review:<br/>
@@ -11,7 +11,7 @@ This is the summary of my reading documentation of the past 2 weeks:<br/>
    3. [Toward a Hierarchical Bayesian Framework for Modelling the Effect of Regional Diversity on Household Expenditure](https://www.researchgate.net/publication/274008292_Toward_a_Hierarchical_Bayesian_Framework_for_Modelling_the_Effect_of_Regional_Diversity_on_Household_Expenditure)
    4. [Model Criticism for Log-Normal Hierarchical Bayesian Models on Household Expenditure in Indonesia](https://ieeexplore.ieee.org/document/6396521)<br/>
    In the paper, the author dig into a measuring tool for model comparison, deviance information criterion (DIC). Extend the discussion from the previous paper discussing household expenditure hierarchical Bayesian modeling. The author use the DIC comparison of prediction result from two-parameter log-normal hierarchical model and the three-parameter log-normal hierarchical model to illustrate his idea.
-   5. [Determinants Of Household Final Consumption Expenditures In Asian Countries_ A Panel Model, 1991-2015](https://ideas.repec.org/a/eaa/aeinde/v18y2018i1_8.html)
+   5. [Determinants Of Household Final Consumption Expenditures In Asian Countries_ A Panel Model, 1991-2015](https://ideas.repec.org/a/eaa/aeinde/v18y2018i1_8.html)<br/>
    The paper illustrates influential economics factors to the household expenditures and compares the model for Asian countries with the globe as baseline. These factors are:
       1. Income (represented by GNI)<br/>
       In models for Asian and the Globe, the income factors are significant in both models. However, in Asian model, this factor is smaller and less significant than Global model when GNI increase by 1%. The possible reason is that Asian has higher propensity to save comparing with the global average.
