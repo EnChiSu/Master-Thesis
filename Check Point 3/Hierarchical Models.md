@@ -10,7 +10,7 @@ In this chapter, the author provide two applcations of Hierarchical Models:
    This equation itself reveals a simple hierarchical structure in the pararmeters, becasue it says that a posterior distribution for a parameter is equal to a conditional distribution for data under the parameter (first level) multivplied by the marginal (prior) probability for the parameter (a second, higher, level). Put another way, the posterior distribution is the prior distribution weighted by the observed information.<br/>
    For example,
    <p align="center">
-      <img src="https://render.githubusercontent.com/render/math?math=y_{ig}~Q( \theta_g)"></p>
+      <img src="https://render.githubusercontent.com/render/math?math=y_{ig}~Q( \theta_g)" width="50" height="35"></p>
 
 
 
