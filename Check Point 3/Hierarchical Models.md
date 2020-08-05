@@ -81,6 +81,12 @@ In this chapter, the author provide two applcations of Hierarchical Models:
       Consider the interaction between different variable, we can put our two variables under different levels, then it becomes
       <p align="center">
       <img src="https://drive.google.com/uc?export=view&id=1f5a1dUjaQy-rm4eEIgR_9pFtqfzRFeiR"></p>  
+      In a traditional regression form, it looks like:
+      <p align="center">
+      <img src="https://drive.google.com/uc?export=view&id=1f5a1dUjaQy-rm4eEIgR_9pFtqfzRFeiR"></p>  
+      , which can be rewritten as
+      <p align="center">
+      <img src="https://drive.google.com/uc?export=view&id=1f5a1dUjaQy-rm4eEIgR_9pFtqfzRFeiR"></p>  
    3. Growth model<br/>
    
    
