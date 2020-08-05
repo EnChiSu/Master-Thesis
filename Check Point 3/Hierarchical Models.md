@@ -76,11 +76,11 @@ In this chapter, the author provide two applcations of Hierarchical Models:
       
    2. Random coefficient model<br/>
    In the previous section, we use single coefficient to represent the effect from the Internet variable. However, the effect may be different among different individual levels. Thus, by adding this variation (with one more sub-index under alpha), our model becomes:
-   <p align="center">
-     <img src="https://drive.google.com/uc?export=view&id=1yNg-Ilx1cWA1uq3qLq4ezu3H3qGVtYHi"></p>   
-   Consider the interaction between different variable, we can put our two variables under different levels, then it becomes
-   <p align="center">
-     <img src="https://drive.google.com/uc?export=view&id=1f5a1dUjaQy-rm4eEIgR_9pFtqfzRFeiR"></p>  
+      <p align="center">
+      <img src="https://drive.google.com/uc?export=view&id=1yNg-Ilx1cWA1uq3qLq4ezu3H3qGVtYHi"></p>   
+      Consider the interaction between different variable, we can put our two variables under different levels, then it becomes
+      <p align="center">
+      <img src="https://drive.google.com/uc?export=view&id=1f5a1dUjaQy-rm4eEIgR_9pFtqfzRFeiR"></p>  
    3. Growth model<br/>
    
    
