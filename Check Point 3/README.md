@@ -21,7 +21,7 @@ This is the summary of my reading documentation of the past 2 weeks:<br/>
       3. Lending Interest rate (reflect monetary policy)<br/>
       In both models, the lending interest rate has inverse impact on the household expenditure. Higher interest rate leads to lower household expenditure, and vice versa.
       4. Government total expenditure (reflect fiscal policy)<br/>
-      Both models present the effect from the government total expenditures. Addtionally, expeansionary fiscal policies can be even more efficient in the short-run. The coefficicent of the factor is also higher than the monetary factor, which illustrate the importance of its influence.<br/>
+      Both models present the effect from the government total expenditures. Addtionally, expansionary fiscal policies can be even more efficient in the short-run. The coefficicent of the factor is also higher than the monetary factor, which illustrate the importance of its influence.<br/>
       It's also found that the influence of this factor in the Asia region is much higher. My thought of this finding is that Asian countries are more collectively thinking cultures and more tend to be influenced by the public sentiment and floating information around the market. Thus, the impact from the policy might extend longer and stronger than the globe. Plus, the neutralize effect in the global model might also be the factor.
       
    
