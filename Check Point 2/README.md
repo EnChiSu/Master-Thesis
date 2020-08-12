@@ -2,8 +2,8 @@ This is the documentation of my reading summary of in the past 2 weeks:<br/>
 
 1. Book Review:<br/>
 About Gibbs Sampling, Metropolis Hasting and Evaluation of MCMC algorithms <br/>(reference: [Introduction to Applied Bayesian Statistics and Estimation for Social Scientists](https://www.springer.com/gp/book/9780387712642))
-   1. [Gibbs Sampling](https://github.com/EnChiSu/Master-Thesis/blob/master/Check%20Point%201/Summary.md) (Ch4)
-   2. [Metropolis Hasting](https://github.com/EnChiSu/Master-Thesis/blob/master/Check%20Point%201/Summary.md) (Ch5)
+   1. [Gibbs Sampling](https://github.com/EnChiSu/Master-Thesis/blob/master/Check%20Point%201/README.md) (Ch4)
+   2. [Metropolis Hasting](https://github.com/EnChiSu/Master-Thesis/blob/master/Check%20Point%201/README.md) (Ch5)
    3. [Evaluation](https://github.com/EnChiSu/Master-Thesis/blob/master/Check%20Point%202/Evaluating%20MCMC%20performance%20%26%20model%20fit.md) (Ch6)
    4. [Some Useful Prior Distribution](https://github.com/EnChiSu/Master-Thesis/blob/master/Check%20Point%202/Some%20useful%20prior%20distribution.md) (Ch3.5)
    
