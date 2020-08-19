@@ -9,10 +9,10 @@ Here is the summary of my reading in the past 2 weeks:
   <img src="https://drive.google.com/uc?export=view&id=1k3rY6G2GRdAN7koBol4ZKu5R2XhzINKo" width="800" height="200">
 </p>
 <p align="center">
-  <img src="https://drive.google.com/uc?export=view&id=1GXcibG0lmstAQJrPLEag-jbjFP4IbGNE" width="700" height="300">
+  <img src="https://drive.google.com/uc?export=view&id=1GXcibG0lmstAQJrPLEag-jbjFP4IbGNE" width="800" height="200">
 </p>
 <p align="center">
-  <img src="https://drive.google.com/uc?export=view&id=1hOP_11VV-YQJB1oFr0s3eUwP-PjG-F6F" width="600" height="150">
+  <img src="https://drive.google.com/uc?export=view&id=1hOP_11VV-YQJB1oFr0s3eUwP-PjG-F6F" width="800" height="200">
 </p>
    One of the lessons I learn from this paper is the structure to elaborate descriptive statsitics and findings for different Asian countries, which is quite close to the way I would like to present. Additionally, several ASEAN countries' data sources are similar to what I am looking for, which included countries like Cambodia, Philippines, Indonesia, Vietnam, and Thailand. However, the household survey data sources of Singapore and Malaysia are also missed in this paper.
    
