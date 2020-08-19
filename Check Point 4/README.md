@@ -6,13 +6,13 @@ Here is the summary of my reading in the past 2 weeks:
    The result show that the chages in per capita consumption over time are mainly driven by changes in household income, changes in household size, educational attainment and urbanization(excludes Philippines). The contribution of changes in demographic characteristics, which demonstrate strong relationship by several previous resarch, to changes in per capita consumption is generally positive but relatively small.<br/>
    DFL decomposition actually is the subtraction between quantiles of densities condition on two different time points. The interesting part of the method is the counterfactual distribution, which you substitute one of the conditional distribution of certain explanatory variable with different time point. The comparison between counterfactual and "factual" distribution, which can also be illustrated by the quantile differentces, can be used to explain the proportion it contribute to the total gap between two time points.
 <p align="center">
-  <img src="https://drive.google.com/uc?export=view&id=1k3rY6G2GRdAN7koBol4ZKu5R2XhzINKo" width="400" height="250">
+  <img src="https://drive.google.com/uc?export=view&id=1k3rY6G2GRdAN7koBol4ZKu5R2XhzINKo" width="800" height="400">
 </p>
 <p align="center">
-  <img src="https://drive.google.com/uc?export=view&id=1GXcibG0lmstAQJrPLEag-jbjFP4IbGNE" width="600" height="400">
+  <img src="https://drive.google.com/uc?export=view&id=1GXcibG0lmstAQJrPLEag-jbjFP4IbGNE" width="1000" height="300">
 </p>
 <p align="center">
-  <img src="https://drive.google.com/uc?export=view&id=1hOP_11VV-YQJB1oFr0s3eUwP-PjG-F6F" width="300" height="200">
+  <img src="https://drive.google.com/uc?export=view&id=1hOP_11VV-YQJB1oFr0s3eUwP-PjG-F6F" width="1200" height="600">
 </p>
    One of the lessons I learn from this paper is the structure to elaborate descriptive statsitics and findings for different Asian countries, which is quite close to the way I would like to present. Additionally, several ASEAN countries' data sources are similar to what I am looking for, which included countries like Cambodia, Philippines, Indonesia, Vietnam, and Thailand. However, the household survey data sources of Singapore and Malaysia are also missed in this paper.
    
