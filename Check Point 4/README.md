@@ -9,6 +9,8 @@ Here is the summary of my reading in the past 2 weeks:
    One of the lessons I have from this paper is the structure to elaborate her findings and statistical analysis from different Asian countries, which is quite similar to what I would like to present. Additionally, several ASEAN countries' data sources are what I am looking for, which included countries like Cambodia, Philippines, Indonesia, Vietnam, and Thailand. I'm still looking for the household expenditure or consumption survey data.
    The structure of the paper can be seperate into several parts:<br/>
       1. 
+      2. 
+   
    2. [Private Saving. New Cross-Country Evidence Based on Bayesian Techniques](https://repositorio.bde.es/handle/123456789/7302?locale=en)<br/>
    The paper use Bayesian Model Averaging (BMA) method, which average all potential models based on weight of each model's likelihood. 
    The prior of the model is established under the concept of Bayesian Averaging of Classical Estimates (BACE), which consider only one prior and its' hyper-parameter, the expected model size, but not multiple prior of all the potential variable's prior and their hyper-parameters.
