@@ -1,7 +1,14 @@
 Here is the summary of my reading in the past 2 weeks:
 
 1. Literature review
-   1. [Private Saving. New Cross-Country Evidence Based on Bayesian Techniques](https://repositorio.bde.es/handle/123456789/7302?locale=en)<br/>
+   1. [Changes in the distribution of household consumption in Southeast Asia](https://link.springer.com/article/10.1007/s10644-018-9236-7)<br/>
+   The paper use DFL decomposition to decompose factors influencing the changes of household consumption differences from 2006 to 2015. 
+   The result show that the chages in per capita consumption over time are mainly driven by changes in household income, changes in household size, educational attainment and urbanization(excludes Philippines). The contribution of changes in demographic characteristics, which demonstrate strong relationship by several previous resarch, to changes in per capita consumption is generally positive but relatively small.<br/>
+   DFL decomposition actually is the subtraction between quantiles of consumption distribution density condition on two different time points. The interesting part is that you have to substitute 
+   The structure of the paper can be seperate into several parts:<br/>
+      1. 
+   One of the lessons I have from this paper is the structure to elaborate her findings and statistical analysis from different Asian countries, which is quite similar to what I would like to present. Additionally, several ASEAN countries' data sources are what I am looking for, which included countries like Cambodia, Philippines, Indonesia, Vietnam, and Thailand. I'm still looking for the household expenditure or consumption survey data.
+   2. [Private Saving. New Cross-Country Evidence Based on Bayesian Techniques](https://repositorio.bde.es/handle/123456789/7302?locale=en)<br/>
    The paper use Bayesian Model Averaging (BMA) method, which average all potential models based on weight of each model's likelihood. 
    The prior of the model is established under the concept of Bayesian Averaging of Classical Estimates (BACE), which consider only one prior and its' hyper-parameter, the expected model size, but not multiple prior of all the potential variable's prior and their hyper-parameters.
    BACE assume that each variable is independently include (or not) in the model, so the model size, or number of potential variables in the model, follows a binomial distribution.
@@ -9,7 +16,7 @@ Here is the summary of my reading in the past 2 weeks:
    The result shows that financial development, fiscal policies, income effects through terms of trade and demographic variables have a great deal of explanatory power for the private saving.
    Contrastingly, the roles of permanent income, inflation and urbanisation appear to be much more limited than previous literature suggests. 
    The paper also shows that life expectancy and old-age dependency ratio changes across countries are expected to affect the saving rate. The acceleration of old-age population and increase of dependency ratio will put downward pressure on savings.
-   2. [The Determinants of Urban Household Poverty in Malaysia](https://www.researchgate.net/publication/26619180_The_Determinants_of_Urban_Household_Poverty_in_Malaysia)<br/>
+   3. [The Determinants of Urban Household Poverty in Malaysia](https://www.researchgate.net/publication/26619180_The_Determinants_of_Urban_Household_Poverty_in_Malaysia)<br/>
    The paper use logistic regression and maximum likelihood to investigate important factors for the urban household poverty in Malaysia. The results shows that human capital (represented by the highest education level of the head of household), marital and Chinese ethnic positively related to the household per capita expenditure. However, ownership of house, number of children below 15, number of male/female adult, number of elderly and migrants fall with increasing per capita expenditure. <br/>
    One interesting aspect, the author provides is that the decreasing number of children, male/female adult, and elderly in household with increasing per capita expenditure shows the emergence of the nuclear family in higher income households in urban areas of Malysia.
    
