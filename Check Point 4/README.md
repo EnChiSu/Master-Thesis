@@ -4,14 +4,15 @@ Here is the summary of my reading in the past 2 weeks:
    1. [Changes in the distribution of household consumption in Southeast Asia](https://link.springer.com/article/10.1007/s10644-018-9236-7)<br/>
    The paper use DFL decomposition to decompose factors influencing the changes of household consumption differences from 2006 to 2015. 
    The result show that the chages in per capita consumption over time are mainly driven by changes in household income, changes in household size, educational attainment and urbanization(excludes Philippines). The contribution of changes in demographic characteristics, which demonstrate strong relationship by several previous resarch, to changes in per capita consumption is generally positive but relatively small.<br/>
+   
    DFL decomposition actually is the subtraction between quantiles of densities condition on two different time points. The interesting part of the method is the counterfactual distribution, which you substitute one of the conditional distribution of certain explanatory variable with different time point. The comparison between counterfactual and "factual" distribution, which can also be illustrated by the quantile differentces, can be used to explain the proportion it contribute to the total gap between two time points.
-    <p align="center">
-    <img src="https://drive.google.com/uc?export=view&id=1k3rY6G2GRdAN7koBol4ZKu5R2XhzINKo" width="800" height="200"></p>
-    <p align="center">
-    <img src="https://drive.google.com/uc?export=view&id=1GXcibG0lmstAQJrPLEag-jbjFP4IbGNE" width="800" height="200"></p>
-    <p align="center">
-    <img src="https://drive.google.com/uc?export=view&id=1hOP_11VV-YQJB1oFr0s3eUwP-PjG-F6F" width="800" height="150"></p>
-       One of the lessons I learn from this paper is the structure to elaborate descriptive statsitics and findings for different Asian countries, which is quite close to the way I would like to present. Additionally, several ASEAN countries' data sources are similar to what I am looking for, which included countries like Cambodia, Philippines, Indonesia, Vietnam, and Thailand. However, the household survey data sources of Singapore and Malaysia are also missed in this paper.
+   <p align="center">
+   <img src="https://drive.google.com/uc?export=view&id=1k3rY6G2GRdAN7koBol4ZKu5R2XhzINKo" width="800" height="200"></p>
+   <p align="center">
+   <img src="https://drive.google.com/uc?export=view&id=1GXcibG0lmstAQJrPLEag-jbjFP4IbGNE" width="800" height="200"></p>
+   <p align="center">
+   <img src="https://drive.google.com/uc?export=view&id=1hOP_11VV-YQJB1oFr0s3eUwP-PjG-F6F" width="800" height="150"></p>
+   One of the lessons I learn from this paper is the structure to elaborate descriptive statsitics and findings for different Asian countries, which is quite close to the way I would like to present. Additionally, several ASEAN countries' data sources are similar to what I am looking for, which included countries like Cambodia, Philippines, Indonesia, Vietnam, and Thailand. However, the household survey data sources of Singapore and Malaysia are also missed in this paper.
    
    2. [Private Saving. New Cross-Country Evidence Based on Bayesian Techniques](https://repositorio.bde.es/handle/123456789/7302?locale=en)<br/>
    The paper use Bayesian Model Averaging (BMA) method, which average all potential models based on weight of each model's likelihood. 
