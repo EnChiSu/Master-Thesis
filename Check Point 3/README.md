@@ -13,7 +13,13 @@ This is the summary of my reading documentation of the past 2 weeks:<br/>
    The micro model represents household characteristics. The macro model represents district characteristics.<br/>
    The result shows that four of the district characteristics, population density, ratio of health facility per capita, ratio of education facility per school age capita, and ratio of healthy person per capita, have significant effect on household expenditure. Contrastively, none of the household characteristics has dominant influence on household expenditure. 
 
-   3. [Toward a Hierarchical Bayesian Framework for Modelling the Effect of Regional Diversity on Household Expenditure](https://www.researchgate.net/publication/274008292_Toward_a_Hierarchical_Bayesian_Framework_for_Modelling_the_Effect_of_Regional_Diversity_on_Household_Expenditure)
+   3. [Toward a Hierarchical Bayesian Framework for Modelling the Effect of Regional Diversity on Household Expenditure](https://www.researchgate.net/publication/274008292_Toward_a_Hierarchical_Bayesian_Framework_for_Modelling_the_Effect_of_Regional_Diversity_on_Household_Expenditure)(這篇是上面那篇的高品質篇，東西是近似的，上篇用Log logistic，這篇用Log normal，但分析和結果的比較精緻)(另外這篇將household expenditure直接與household welfare做連結)<br/>
+   The paper provides good mathematical notation and steps illustrating the hierarchical bayesian model.<br/>
+   The author also use micro and macro model to explain the household expenditure (or household welfare).<br/>
+   The micro model represents household characteristics. The macro model represents district characteristics.<br/>
+   The result shows that in terms of household characteristics the housing condition, daily needs facilities in the house, the human capital, the number of people, and level of education of household head. <br/>
+   In terms of the district characteristics, accessibilities of public facility(正向), number of small / household industry (正向), and percentage of wetland (負向) have significant effect on household welfare.
+
    4. [Model Criticism for Log-Normal Hierarchical Bayesian Models on Household Expenditure in Indonesia](https://ieeexplore.ieee.org/document/6396521)<br/>
    In the paper, the author dig into a measuring tool for model comparison, deviance information criterion (DIC). Extend the discussion from the previous paper discussing household expenditure hierarchical Bayesian modeling. The author use the DIC comparison of prediction result from two-parameter log-normal hierarchical model and the three-parameter log-normal hierarchical model to illustrate his idea.
    5. [Determinants Of Household Final Consumption Expenditures In Asian Countries_ A Panel Model, 1991-2015](https://ideas.repec.org/a/eaa/aeinde/v18y2018i1_8.html)<br/>
