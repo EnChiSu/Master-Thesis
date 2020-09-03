@@ -24,5 +24,8 @@ Here is the summary of my reading in the past 2 weeks:
    3. [The Determinants of Urban Household Poverty in Malaysia](https://www.researchgate.net/publication/26619180_The_Determinants_of_Urban_Household_Poverty_in_Malaysia)<br/>
    The paper use logistic regression and maximum likelihood to investigate important factors for the urban household poverty in Malaysia. The results shows that human capital (represented by the highest education level of the head of household), marital and Chinese ethnic positively related to the household per capita expenditure. However, ownership of house, number of children below 15, number of male/female adult, number of elderly and migrants fall with increasing per capita expenditure. <br/>
    One interesting aspect, the author provides is that the decreasing number of children, male/female adult, and elderly in household with increasing per capita expenditure shows the emergence of the nuclear family in higher income households in urban areas of Malysia.
+   4. Understanding the Average Impact of Microcredit Expansions: A Baysian Hierarchical Analysis of Seven Randomized Experiments
+   The Appendix of the paper provide a general description of how the author apply Hamiltonian Monte Carlo with Stan and the result you can get.
+
    
    
