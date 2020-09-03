@@ -3,7 +3,7 @@ Here is the summary of my reading in the past 2 weeks:
 1. Literature review
    1. [Changes in the distribution of household consumption in Southeast Asia](https://link.springer.com/article/10.1007/s10644-018-9236-7)<br/>
    The paper use DFL decomposition to decompose factors influencing the changes of household consumption differences from 2006 to 2015. 
-   The result show that the chages in per capita consumption over time are mainly driven by changes in household income, changes in household size, educational attainment and urbanization(excludes Philippines). The contribution of changes in demographic characteristics, which demonstrate strong relationship by several previous resarch, to changes in per capita consumption is generally positive but relatively small.<br/>
+   The result show that the chages in per capita consumption over time are mainly driven by changes in household income, changes in household size, educational attainment and urbanization(excludes Philippines). The contribution of changes in demographic characteristics, which demonstrate strong relationship by several previous resarch, to changes in per capita consumption is generally positive but relatively small.
    DFL decomposition actually is the subtraction between quantiles of densities condition on two different time points. The interesting part of the method is the counterfactual distribution, which you substitute one of the conditional distribution of certain explanatory variable with different time point. The comparison between counterfactual and "factual" distribution, which can also be illustrated by the quantile differentces, can be used to explain the proportion it contribute to the total gap between two time points.
    <p align="center">
    <img src="https://drive.google.com/uc?export=view&id=1k3rY6G2GRdAN7koBol4ZKu5R2XhzINKo" width="800" height="200"></p>
@@ -24,7 +24,7 @@ Here is the summary of my reading in the past 2 weeks:
    3. [The Determinants of Urban Household Poverty in Malaysia](https://www.researchgate.net/publication/26619180_The_Determinants_of_Urban_Household_Poverty_in_Malaysia)<br/>
    The paper use logistic regression and maximum likelihood to investigate important factors for the urban household poverty in Malaysia. The results shows that human capital (represented by the highest education level of the head of household), marital and Chinese ethnic positively related to the household per capita expenditure. However, ownership of house, number of children below 15, number of male/female adult, number of elderly and migrants fall with increasing per capita expenditure. <br/>
    One interesting aspect, the author provides is that the decreasing number of children, male/female adult, and elderly in household with increasing per capita expenditure shows the emergence of the nuclear family in higher income households in urban areas of Malysia.
-   4. Understanding the Average Impact of Microcredit Expansions: A Baysian Hierarchical Analysis of Seven Randomized Experiments
+   4. Understanding the Average Impact of Microcredit Expansions: A Baysian Hierarchical Analysis of Seven Randomized Experiments<br/>
    The Appendix of the paper provide a general description of how the author apply Hamiltonian Monte Carlo with Stan and the result you can get.
 
    
