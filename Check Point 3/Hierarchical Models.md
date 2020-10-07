@@ -7,7 +7,7 @@ In this chapter, the author provide two applcations of Hierarchical Models:
       <img src="https://render.githubusercontent.com/render/math?math=p(\theta|data) \propto p(data| \theta) \times p(\theta)" width="300" height="35"></p>
    <p align="center">
       <img src="https://render.githubusercontent.com/render/math?math=posterior \propto likelihood \times prior" width="300" height="35"></p>
-   This equation itself reveals a simple hierarchical structure in the pararmeters, becasue it says that a posterior distribution for a parameter is equal to a conditional distribution for data under the parameter (first level) multivplied by the marginal (prior) probability for the parameter (a second, higher, level). Put another way, the posterior distribution is the prior distribution weighted by the observed information.<br/>
+   This equation itself reveals a simple hierarchical structure in the pararmeters, becasue it says that a posterior distribution for a parameter is equal to a conditional distribution for data under the parameter (first level) multiplied by the marginal (prior) probability for the parameter (a second, higher, level). Put another way, the posterior distribution is the prior distribution weighted by the observed information.<br/>
    For example,
    We know that the election polling result follow beta distribution as below,
    <p align="center">
@@ -49,7 +49,7 @@ In this chapter, the author provide two applcations of Hierarchical Models:
    1. Random Intercept model<br/>
       1. with intercept model to illustrate the random effect<br/>
          <p align="center">
-         <img src="https://render.githubusercontent.com/render/math?math=y_{it}= \alpha_i + e_{it}" width="100" height="35"></p>
+         <img src="https://render.githubusercontent.com/render/math?math=y_{it}= \alpha_i \+ e_{it}" width="100" height="35"></p>
          where alpha is group level variable and e is individual random error term as below
          <p align="center">
          <img src="https://render.githubusercontent.com/render/math?math=\alpha_i ~ N(\alpha, \tau^2) " width="100" height="35"></p>
